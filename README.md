@@ -101,3 +101,72 @@ Keep track of development and community news.
 * Follow [@rootswp on Twitter](https://twitter.com/rootswp)
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+
+
+# [Piklist](https://piklist.com)
+Piklist is the developers best friend. A rapid development framework for WordPress that will let you concentrate on the main focus of your plugin or theme, and let Piklist handle everything else.
+
+[Watch the Piklist presentation from WordCamp NYC >] (http://wordpress.tv/2012/09/04/steve-bruner-and-kevin-miller-building-powerful-websites-and-web-applications-with-piklist/)
+
+### Piklist makes it easy to:
+* Build Fields for Settings page, Widgets, Custom Post Types, Custom Taxonomies and User Profiles with minimal code.
+* Conditionally show fields (or their values), based on Post Status and/or User Role.
+* Define Custom Post Statuses
+* Relate Post-to-Posts.
+* [and more...](https://piklist.com/)
+
+### LEARN MORE
+[Piklist User Guide](https://piklist.com/user-guide/)
+
+### Better Custom Post Types
+* Powerful Custom Post Types
+* Relate Custom Post Types to each other.
+* Add your own post statuses.
+
+### Codeless Meta Boxes
+* Group fields in a meta box, by placing them all in one file.
+* Add a comment block at the top of your file to define the meta box attributes
+* Hide/Show based on the post status.
+* Hide/Show based on the users capability.
+* Sort meta boxes with granular control.
+* Lock the box, so users cannot move or hide them.
+* Add meta box to a specific Page/Post ID.
+
+### Simple, Groupable Widgets
+* Group widgets into one widget to save space, and make finding them easier
+* Create one file for your Widget settings, and one for your output... all done!
+* Use any Piklist field type in your widget settings page.
+
+### Powerful Fields
+Backend, Frontend, Widgets... it all works the same.
+
+### Lots of field types (and more coming soon!):
+* text
+* textarea
+* checkbox
+* radio
+* select
+* post editor
+* hidden
+* html
+* datepicker
+* color picker
+* add-more
+
+### Choose a content type for your field (You can even mix-n-match on one form)
+* post
+* post_meta
+* comment
+* comment_meta
+* term
+* term_meta
+* user
+* user_meta
+* media
+* media_meta
+
+### Mix Field and Content types (i.e. Taxonomies as radio buttons)
+* Hide/Show based on another form field.
+* Hide/Show based on the post status.
+* Hide/Show based on the users capability.
+* Hide form fields, and just show field values
