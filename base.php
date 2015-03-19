@@ -1,7 +1,6 @@
 <?php
 
 namespace Roots\Sage;
-
 use Roots\Sage\Config;
 use Roots\Sage\Wrapper;
 
@@ -16,20 +15,24 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/header');
+      //get_template_part('templates/header');
     ?>
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+
+    <?php if (Config\display_sidebar()) : ?>
+        <div class="ui two column grid stackable">
+            <div class="twelve wide column">
+                <?php include Wrapper\template_path(); ?>
+            </div>
+            <div class="four wide column">
+                <aside class="sidebar" role="complementary">
+                  <?php include Wrapper\sidebar_path(); ?>
+                </aside><!-- /.sidebar -->
+            </div>
+        </div>
+    <?php else: ?>
+        <?php include Wrapper\template_path(); ?>
+    <?php endif; ?>
+
     <?php
       get_template_part('templates/footer');
       wp_footer();

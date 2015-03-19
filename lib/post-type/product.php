@@ -23,7 +23,7 @@ function setup_custom_post() {
         'label' => 'product',
         'description' => 'Products',
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail', 'comments',),
+        'supports' => array('title', 'editor', 'thumbnail', 'comments', 'excerpt'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,

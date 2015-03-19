@@ -11,9 +11,16 @@
         "jquery": "1.11.2",
         "semantic-ui": "~1.11.4",
         "FlexSlider-Scss": "~1.0.0",
-        "isotope": "~2.1.1"
+        "isotope": "~2.1.1",
+        "owl-carousel2": "*"
     },
     "overrides": {
+        "owl-carousel2":{
+            "main": [
+                "./dist/owl.carousel.js",
+                "./dist/assets/"
+            ]
+        },
         "modernizr": {
             "main": "./modernizr.js"
         },

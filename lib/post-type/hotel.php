@@ -21,7 +21,7 @@ function setup_custom_post() {
 
     $args = array(
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail',),
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,
