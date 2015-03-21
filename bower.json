@@ -10,7 +10,7 @@
         "modernizr": "2.8.2",
         "jquery": "1.11.2",
         "semantic-ui": "~1.11.4",
-        "FlexSlider-Scss": "~1.0.0",
+        "owlcarousel" : "1.3.x",
         "isotope": "~2.1.1"
     },
     "overrides": {
@@ -23,10 +23,10 @@
                 "./dist/semantic.css"
             ]
         },
-        "FlexSlider-Scss": {
+        "owlcarousel": {
             "main": [
-                "./jquery.flexslider.js",
-                "./flexslider.css"
+                "./owl-carousel/owl.carousel.js",
+                "./owl-carousel/owl.carousel.css"
             ]
         },
         "isotope": {
