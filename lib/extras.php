@@ -111,3 +111,5 @@ function agency_setting_pages($pages) {
     return $pages;
 }
 add_filter('piklist_admin_pages', __NAMESPACE__ . '\\agency_setting_pages');
+
+add_image_size( 'agency-promotion', 400, 250, true );
