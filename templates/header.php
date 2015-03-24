@@ -1,23 +1,27 @@
 <?php use Roots\Sage\Nav; ?>
-
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="ui button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+<header class="ui basic cbp-af-header" role="banner">
+    <div class="ui stackable two column grid cbp-af-inner">
+        <div class="column">
+            <img src="//placehold.it/150x50" />
+        </div>
+        <div class="column">
+            <div class="ui horizontal list">
+                <div class="item">
+                    <div class="content">
+                        Request a travel
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        About
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        022-305-3023
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <nav class="collapse navbar-collapse" role="navigation">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new Nav\SageNavWalker(), 'menu_class' => 'nav navbar-nav']);
-      endif;
-      ?>
-    </nav>
-  </div>
 </header>
