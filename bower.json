@@ -19,14 +19,21 @@
         },
         "semantic": {
             "main": [
+                "./src/semantic.less",
                 "./dist/semantic.js",
-                "./dist/semantic.css"
+                "./src/themes/default/fonts/icons.eot",
+                "./src/themes/default/fonts/icons.svg",
+                "./src/themes/default/fonts/icons.ttf",
+                "./src/themes/default/fonts/icons.woff",
+                "./src/themes/default/fonts/icons.woff2"
             ]
         },
         "owlcarousel": {
             "main": [
                 "./owl-carousel/owl.carousel.js",
-                "./owl-carousel/owl.carousel.css"
+                "./owl-carousel/owl.carousel.css",
+                "./owl-carousel/owl.theme.css",
+                "./owl-carousel/owl.transitions.css"
             ]
         },
         "isotope": {
