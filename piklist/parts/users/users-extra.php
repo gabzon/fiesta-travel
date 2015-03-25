@@ -10,7 +10,13 @@ piklist('field', array(
     'label' => __('Facebook'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
+
 ));
 
 piklist('field', array(
@@ -20,6 +26,11 @@ piklist('field', array(
     'label' => __('Twitter'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -30,6 +41,11 @@ piklist('field', array(
     'label' => __('Google+'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -40,6 +56,11 @@ piklist('field', array(
     'label' => __('LinkedIn'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -50,6 +71,11 @@ piklist('field', array(
     'label' => __('Instagram'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -60,6 +86,11 @@ piklist('field', array(
     'label' => __('Pinterest'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -70,6 +101,11 @@ piklist('field', array(
     'label' => __('Skype'),
     'attributes' => array(
         'class' => 'text'
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
