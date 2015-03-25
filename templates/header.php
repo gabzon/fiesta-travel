@@ -8,12 +8,12 @@
             <div class="ui horizontal list">
                 <div class="item">
                     <div class="content">
-                        Request a travel
+                        <a href="#request">Request a travel</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
-                        About
+                        <a href="#about">About</a>
                     </div>
                 </div>
                 <div class="item">
