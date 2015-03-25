@@ -4,8 +4,10 @@ $query = new WP_Query(
         'post_type' => 'product'
     )
 );
-
-if ( $query->have_posts() ) : ?>
+?>
+<section id="promotion" class="ui basic inverted purple segment fullheight">
+    <h2 class="ui center aligned header uppercase"><?php _e('promotions'); ?></h2>
+<?php if ( $query->have_posts() ) : ?>
     <div id="promotions-crousel">
     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
         <div class="item promotion-item">,
@@ -21,3 +23,4 @@ if ( $query->have_posts() ) : ?>
     <?php endwhile; wp_reset_postdata(); ?>
     </div>
 <?php endif; ?>
+</section>
