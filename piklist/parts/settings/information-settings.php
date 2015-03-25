@@ -41,7 +41,7 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'field' => 'agency_posta_code',
+    'field' => 'agency_postal_code',
     'scope' => 'post_meta',
     'label' => __('Postal Code'),
     'attributes' => array(
@@ -106,11 +106,13 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'text',
+    'type' => 'textarea',
     'field' => 'agency_schedule',
     'scope' => 'post_meta',
     'label' => __('Schedule'),
     'attributes' => array(
+        'rows' => 5,
+        'cols' => 50,
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency schedule')
     )
