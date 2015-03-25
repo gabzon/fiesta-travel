@@ -14,6 +14,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Facebook')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -25,6 +30,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Twitter')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -36,6 +46,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Pinterest')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -47,6 +62,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency LinkedIn')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -58,6 +78,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Google Plus')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -69,6 +94,11 @@ piklist('field', array(
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Skype')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
 
@@ -76,9 +106,14 @@ piklist('field', array(
     'type' => 'text',
     'field' => 'social_instagram',
     'scope' => 'post_meta',
-    'label' => __('Fax'),
+    'label' => __('Instagram'),
     'attributes' => array(
         'class' => 'regular-text',
         'placeholder' => __('Enter the agency Instagram')
+    ),
+    'validate' => array(
+        array(
+            'type' => 'url'
+        )
     )
 ));
