@@ -10,30 +10,30 @@
         "modernizr": "2.8.2",
         "jquery": "1.11.2",
         "semantic-ui": "~1.11.4",
-        "FlexSlider-Scss": "~1.0.0",
-        "isotope": "~2.1.1",
-        "owl-carousel2": "*"
+        "owlcarousel" : "1.3.x",
+        "isotope": "~2.1.1"
     },
     "overrides": {
-        "owl-carousel2":{
-            "main": [
-                "./dist/owl.carousel.js",
-                "./dist/assets/"
-            ]
-        },
         "modernizr": {
             "main": "./modernizr.js"
         },
         "semantic": {
             "main": [
+                "./src/semantic.less",
                 "./dist/semantic.js",
-                "./dist/semantic.css"
+                "./src/themes/default/fonts/icons.eot",
+                "./src/themes/default/fonts/icons.svg",
+                "./src/themes/default/fonts/icons.ttf",
+                "./src/themes/default/fonts/icons.woff",
+                "./src/themes/default/fonts/icons.woff2"
             ]
         },
-        "FlexSlider-Scss": {
+        "owlcarousel": {
             "main": [
-                "./jquery.flexslider.js",
-                "./flexslider.css"
+                "./owl-carousel/owl.carousel.js",
+                "./owl-carousel/owl.carousel.css",
+                "./owl-carousel/owl.theme.css",
+                "./owl-carousel/owl.transitions.css"
             ]
         },
         "isotope": {

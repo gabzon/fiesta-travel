@@ -1,23 +1,11 @@
-<div id="frontpage">
-    <section id="masthead" class="ui basic inverted orange segment fullheight">
-        <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('templates/content', 'page'); ?>
-        <?php endwhile; ?>
-    </section>
+<?php get_template_part('templates/header'); ?>
+    <div class="ui page grid">
+        <?php get_template_part('templates/frontpage/services'); ?>
 
-    <section id="promotion" class="ui basic inverted purple segment fullheight">
+        <?php get_template_part('templates/frontpage/promotions'); ?>
 
-    </section>
+        <?php get_template_part('templates/frontpage/form'); ?>
 
-    <section id="services" class="ui basic inverted blue segment fullheight">
+        <?php get_template_part('templates/frontpage/about'); ?>
+    </div>
 
-    </section>
-
-    <section id="form" class="ui basic inverted red segment fullheight">
-
-    </section>
-
-    <section id="about" class="ui basic inverted green segment fullheight">
-
-    </section>
-</div>

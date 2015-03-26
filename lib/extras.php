@@ -91,3 +91,25 @@ function my_restrict_manage_posts() {
     }
 }
 add_action( 'restrict_manage_posts', __NAMESPACE__ . '\\my_restrict_manage_posts' );
+
+
+function agency_setting_pages($pages) {
+    $pages[] = array(
+        'page_title' => __('Settings'),
+        'menu_title' => __('Settings'),
+        'sub_menu' => 'themes.php', //Under Appearance menu
+        'capability' => 'manage_options',
+        'menu_slug' => 'agency_settings',
+        'setting' => 'agency_settings',
+        'menu_icon' => plugins_url('piklist/parts/img/piklist-icon.png'),
+        'page_icon' => plugins_url('piklist/parts/img/piklist-page-icon-32.png'),
+        'single_line' => false,
+        'default_tab' => 'Agency Information',
+        'save_text' => __('Save Settings')
+    );
+
+    return $pages;
+}
+add_filter('piklist_admin_pages', __NAMESPACE__ . '\\agency_setting_pages');
+
+add_image_size( 'agency-promotion', 400, 250, true );
