@@ -1,8 +1,10 @@
 <?php use Roots\Sage\Nav; ?>
-<header class="ui basic cbp-af-header" role="banner">
-    <div class="ui stackable two column grid cbp-af-inner">
+<header role="banner">
+    <div class="ui stackable two column page grid">
         <div class="column">
-            <img src="//placehold.it/150x50" />
+            <a href="<?php bloginfo('url'); ?>">
+                <img class="logo" src="//placehold.it/250x100" />
+            </a>
         </div>
         <div class="column">
             <div class="ui horizontal list">
@@ -18,7 +20,7 @@
                 </div>
                 <div class="item">
                     <div class="content">
-                        022-305-3023
+                        <a href="tel:022-305-3023">022-305-3023</a>
                     </div>
                 </div>
             </div>
