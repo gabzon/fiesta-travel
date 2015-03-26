@@ -6,4 +6,78 @@
   text-transform: uppercase;
 }
 
+header{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  line-height: 108px;
+  height: 141px;
+  background: #335C7D;
+  color: #fff;
+  margin-bottom: 15px;
+  z-index: 999999;
+  transition: all 0.4s ease;
+
+  a{
+    overflow: auto;
+  }
+
+  .logo{
+    margin: 13px;
+    padding: 0;
+    width: 45%;
+    transition: all 0.4s ease;
+  }
+
+  .list{
+    float: right;
+    margin: 0 13px;
+
+    .content{
+      font-size: 1.4em;
+      line-height: 6em !important;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+header.stick {
+  position: fixed;
+  font-size: 24px;
+  line-height: 48px;
+  height: 83px;
+  background: #efc47D;
+  text-align: left;
+  padding-left: 20px;
+  z-index: 999999;
+  transition: all 0.4s ease;
+
+  .logo{
+    margin: 19px 13px 0 13px;
+    padding: 0;
+    width: 27%;
+    transition: all 0.4s ease;
+  }
+
+  .list{
+    .content{
+      line-height: 4.4em !important;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px){
+  header{
+
+    .logo{
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}
+
+
+
 
