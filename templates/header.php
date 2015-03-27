@@ -3,7 +3,7 @@
     <div class="ui stackable two column page grid">
         <div class="column">
             <a href="<?php bloginfo('url'); ?>">
-                <img class="logo" src="//placehold.it/250x100" />
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/info/images/bad-logo.png" />
             </a>
         </div>
         <div class="column">
