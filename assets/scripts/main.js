@@ -34,7 +34,7 @@
                   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                   if (target.length) {
                       $('html,body').animate({
-                          scrollTop: target.offset().top
+                          scrollTop: (target.offset().top) - ($("header").outerHeight())
                       }, 1000);
                       return false;
                   }
@@ -47,6 +47,32 @@
               }
               else{
                   $('header').removeClass("stick");
+              }
+          });
+
+          var frompicker = $('#departure');
+          var topicker = $('#return');
+
+          frompicker.pickadate();
+          topicker.pickadate();
+
+
+          if ( frompicker.get('value') ) {
+              topicker.set('min', frompicker.get('select'));
+          }
+          if ( topicker.get('value') ) {
+              frompicker.set('max', topicker.get('select'));
+          }
+
+          // When something is selected, update the “from” and “to” limits.
+          frompicker.on('set', function(event) {
+              if ( event.select ) {
+                  topicker.set('min', frompicker.get('select'));
+              }
+          });
+          topicker.on('set', function(event) {
+              if ( event.select ) {
+                  frompicker.set('max', topicker.get('select'));
               }
           });
 
