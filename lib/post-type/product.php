@@ -30,7 +30,7 @@ function setup_custom_post() {
         'show_in_menu' => true,
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
-        'menu_position' => 10,
+        'menu_position' => 25,
         'menu_icon' => 'dashicons-products',
         'can_export' => true,
         'has_archive' => true,
