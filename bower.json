@@ -1,50 +1,61 @@
 {
-    "name": "sage",
-    "homepage": "https://roots.io/sage/",
-    "authors": [
-        "Ben Word <ben@benword.com>"
-    ],
-    "license": "MIT",
-    "private": true,
-    "dependencies": {
-        "modernizr": "2.8.2",
-        "jquery": "1.11.2",
-        "semantic-ui": "~1.11.4",
-        "owlcarousel" : "1.3.x",
-        "isotope": "~2.1.1"
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.2",
+    "semantic-ui": "~1.11.4",
+    "owlcarousel": "1.3.x",
+    "isotope": "~2.1.1",
+    "pickadate": "~3.5.5"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "./modernizr.js"
     },
-    "overrides": {
-        "modernizr": {
-            "main": "./modernizr.js"
-        },
-        "semantic": {
-            "main": [
-                "./src/semantic.less",
-                "./dist/semantic.js",
-                "./src/themes/default/fonts/icons.eot",
-                "./src/themes/default/fonts/icons.svg",
-                "./src/themes/default/fonts/icons.ttf",
-                "./src/themes/default/fonts/icons.woff",
-                "./src/themes/default/fonts/icons.woff2"
-            ]
-        },
-        "owlcarousel": {
-            "main": [
-                "./owl-carousel/owl.carousel.js",
-                "./owl-carousel/owl.carousel.css",
-                "./owl-carousel/owl.theme.css",
-                "./owl-carousel/owl.transitions.css"
-            ]
-        },
-        "isotope": {
-            "main": [
-                "./js/item.js",
-                "./js/layout-mode.js",
-                "./js/isotope.js",
-                "./js/layout-modes/vertical.js",
-                "./js/layout-modes/fit-rows.js",
-                "./js/layout-modes/masonry.js"
-            ]
-        }
+    "semantic": {
+      "main": [
+        "./src/semantic.less",
+        "./dist/semantic.js",
+        "./src/themes/default/fonts/icons.eot",
+        "./src/themes/default/fonts/icons.svg",
+        "./src/themes/default/fonts/icons.ttf",
+        "./src/themes/default/fonts/icons.woff",
+        "./src/themes/default/fonts/icons.woff2"
+      ]
+    },
+    "owlcarousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.js",
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.theme.css",
+        "./owl-carousel/owl.transitions.css"
+      ]
+    },
+    "isotope": {
+      "main": [
+        "./js/item.js",
+        "./js/layout-mode.js",
+        "./js/isotope.js",
+        "./js/layout-modes/vertical.js",
+        "./js/layout-modes/fit-rows.js",
+        "./js/layout-modes/masonry.js"
+      ]
+    },
+    "pickadate" : {
+        "main": [
+            "./lib/picker.js",
+            "./lib/picker.date.js",
+            "./lib/picker.time.js",
+            "./lib/themes/classic.css",
+            "./lib/themes/classic.date.css",
+            "./lib/themes/classic.time.css"
+        ]
     }
+  }
 }
