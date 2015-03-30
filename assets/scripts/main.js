@@ -50,13 +50,15 @@
               }
           });
 
-          var frompicker = $('#departure');
-          var topicker = $('#return');
+          var frominput = $('#departure').pickadate({
+              min : 1
+          });
+          var toinput = $('#return').pickadate();
 
-          frompicker.pickadate();
-          topicker.pickadate();
+          var frompicker = frominput.pickadate('picker');
+          var topicker = toinput.pickadate('picker');
 
-
+          //Get the defaults value if are set
           if ( frompicker.get('value') ) {
               topicker.set('min', frompicker.get('select'));
           }
@@ -66,6 +68,7 @@
 
           // When something is selected, update the “from” and “to” limits.
           frompicker.on('set', function(event) {
+              console.log(event);
               if ( event.select ) {
                   topicker.set('min', frompicker.get('select'));
               }
@@ -76,6 +79,13 @@
               }
           });
 
+          $('#sidebar-toggle').on('click', function(event){
+              $('.left.sidebar').sidebar('toggle');
+          });
+
+          $('.left.sidebar .item').on('click', function(event){
+              $('.left.sidebar').sidebar('hide');
+          });
 
       },
       finalize: function() {
