@@ -16,41 +16,47 @@ header{
   text-align: center;
   font-size: 72px;
   line-height: 108px;
-  height: 141px;
+  height: auto;
   background: #335C7D;
   color: #fff;
   //margin-bottom: 15px;
   z-index: 999999;
   transition: all 0.4s ease;
 
-  a{
+  .home{
+    display: block;
+    height: auto;
     overflow: auto;
+    line-height: 1.2em;
   }
 
   .logo{
-    margin: 13px;
+    margin: 10px;
     padding: 0;
-    width: 45%;
+    width: 60%;
+    max-width: 250px;
     transition: all 0.4s ease;
+  }
+
+  .ui.list>.item>.content{
+    font-size: 1.4em;
+    line-height: 5.5em;
+    transition: all 0.4s ease;
+
   }
 
   .list{
     float: right;
     margin: 0 13px;
-
-    .content{
-      font-size: 1.4em;
-      line-height: 6em !important;
-      transition: all 0.4s ease;
-    }
   }
+
 }
 
 header.stick {
   position: fixed;
   font-size: 24px;
   line-height: 48px;
-  height: 83px;
+  height: auto;
   background: #efc47D;
   text-align: left;
   padding-left: 20px;
@@ -58,9 +64,10 @@ header.stick {
   transition: all 0.4s ease;
 
   .logo{
-    margin: 19px 13px 0 13px;
+    width: 45%;
+    max-width: 180px;
+    margin: 13px;
     padding: 0;
-    width: 27%;
     transition: all 0.4s ease;
   }
 
@@ -74,10 +81,36 @@ header.stick {
 
 @media only screen and (max-width: 767px){
   header{
+    overflow: visible;
+    height: auto;
 
     .logo{
       display: block;
       margin: 10px auto;
     }
+
+    .menu-toggle{
+      line-height: 3em;
+    }
+  }
+
+  header.stick{
+    position: fixed;
+    font-size: 1em;
+    line-height: 48px;
+    height: auto;
+    background: #efc47D;
+    text-align: left;
+    padding-left: 20px;
+    z-index: 999999;
+    transition: all 0.4s ease;
+
+    .logo{
+      display: block;
+      width: 45%;
+      max-width: 180px;
+      margin: 10px auto;
+    }
   }
 }
+
