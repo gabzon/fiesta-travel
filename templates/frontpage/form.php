@@ -87,7 +87,7 @@
                 </div>
                 <div class="row">
                     <div class="right aligned sixteen wide column">
-                        <button type="submit" class="ui primary button">Send</div>
+                        <button type="submit" class="ui primary button">Send</button>
                 </div>
             </div>
             </div>
