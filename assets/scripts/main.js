@@ -28,6 +28,13 @@
               itemsDesktopSmall : [979,3]
           });
 
+          $('.gallery').owlCarousel({
+              navigation : true, // Show next and prev buttons
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem:true
+          });
+
           $('a[href*=#]:not([href=#])').click(function() {
               if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                   var target = $(this.hash);
