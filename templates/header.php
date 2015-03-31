@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Nav; ?>
-<header role="banner">
+<header id="menu" role="banner">
     <div class="ui stackable page grid">
         <div class="six wide column">
             <a href="<?php bloginfo('url'); ?>" class="home">
