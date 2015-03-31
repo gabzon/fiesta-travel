@@ -112,4 +112,9 @@ function agency_setting_pages($pages) {
 }
 add_filter('piklist_admin_pages', __NAMESPACE__ . '\\agency_setting_pages');
 
+function new_excerpt_more( $excerpt ) {
+    return '';
+}
+add_filter( 'excerpt_more', __NAMESPACE__ . '\\new_excerpt_more' );
+
 add_image_size( 'agency-promotion', 400, 250, true );
