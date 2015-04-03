@@ -75,7 +75,7 @@ function check_valid_number($validation_rules) {
 }
 add_filter('piklist_validation_rules', __NAMESPACE__ . '\\check_valid_number', 11);
 
-function my_restrict_manage_posts() {
+function agency_restrict_manage_posts() {
     global $typenow;
     if( $typenow != "page" && $typenow != "post" ){
         $filters = get_object_taxonomies($typenow);
@@ -90,7 +90,7 @@ function my_restrict_manage_posts() {
         }
     }
 }
-add_action( 'restrict_manage_posts', __NAMESPACE__ . '\\my_restrict_manage_posts' );
+add_action( 'restrict_manage_posts', __NAMESPACE__ . '\\agency_restrict_manage_posts' );
 
 
 function agency_setting_pages($pages) {
@@ -111,5 +111,10 @@ function agency_setting_pages($pages) {
     return $pages;
 }
 add_filter('piklist_admin_pages', __NAMESPACE__ . '\\agency_setting_pages');
+
+function new_excerpt_more( $excerpt ) {
+    return '';
+}
+add_filter( 'excerpt_more', __NAMESPACE__ . '\\new_excerpt_more' );
 
 add_image_size( 'agency-promotion', 400, 250, true );

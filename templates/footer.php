@@ -5,8 +5,8 @@ $logo = $agency_options['agency_logo'];
 
 <footer id="main-footer" class="ui basic inverted red segment">
 
-    <div class="ui stackable four column grid">
-        <div class="column">
+    <div class="ui stackable five column grid">
+        <div class="ui center aligned column">
             <?php if ($logo): ?>
                 <img class="ui image" src="<?php echo $logo;?>" />
             <?php else: ?>
@@ -14,51 +14,79 @@ $logo = $agency_options['agency_logo'];
             <?php endif; ?>
         </div>
         <div class="column">
-            <p>
-                <?php echo $agency_options['agency_address']; ?>,
-                <?php echo $agency_options['agency_postal_code']; ?>,
-                <?php echo $agency_options['agency_city']; ?>
-                <?php echo $agency_options['agency_country']; ?>
-            </p>
-
-            <p><?php echo $agency_options['agency_email']; ?></p>
-            <p><?php echo $agency_options['agency_phone']; ?></p>
-            <p><?php echo $agency_options['agency_fax']; ?></p>
+            <div class="ui medium list">
+                <div class="item">
+                    <i class="top aligned home icon"></i>
+                    <div class="content">
+                        <?php echo $agency_options['agency_address']; ?><br/>
+                        <?php echo $agency_options['agency_postal_code']; ?>, <?php echo $agency_options['agency_city']; ?><br/>
+                        <?php echo $agency_options['agency_country']; ?><br/>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="column">
+            <div class="ui medium list">
+                <?php if ($agency_options['agency_email']) { ?>
+                <div class="item">
+                    <i class="mail icon"></i>
+                    <div class="content">
+                        <?php echo $agency_options['agency_email']; ?>
+                    </div>
+                </div>
+                <?php } ?>
+                <?php if ($agency_options['agency_phone']) { ?>
+                    <div class="item">
+                        <i class="call icon"></i>
+                        <div class="content">
+                            <?php echo $agency_options['agency_phone']; ?>
+                        </div>
+                    </div>
+                <?php } ?>
+                <?php if ($agency_options['agency_fax']) { ?>
+                    <div class="item">
+                        <i class="fax icon"></i>
+                        <div class="content">
+                            <?php echo $agency_options['agency_fax']; ?>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="column center aligned">
             <p><?php echo nl2br($agency_options['agency_schedule']); ?></p>
         </div>
-        <div class="column">
+        <div class="column center aligned">
             <div class="ui horizontal list">
                 <?php if($agency_options['social_facebook']) : ?>
-                    <div class="item">
-                        <a href="<?php echo $agency_options['social_facebook']; ?>">F<i class="facebook square icon"></i></a>
-                    </div>
+                    <a class="ui circular facebook icon button" href="<?php echo $agency_options['social_facebook']; ?>">
+                        <i class="facebook icon"></i>
+                    </a>
                 <?php endif; ?>
                 <?php if($agency_options['social_twitter']) : ?>
-                    <div class="item">
-                        <a href="<? echo $agency_options['social_twitter']; ?>">T<i class="twitter square icon"></i></a>
-                    </div>
+                    <a class="ui circular twitter icon button" href="<?php echo $agency_options['social_twitter']; ?>">
+                        <i class="twitter icon"></i>
+                    </a>
                 <?php endif; ?>
                 <?php if($agency_options['social_pinterest']) : ?>
-                    <div class="item">
-                        <a href="<?php echo $agency_options['social_pinterest']; ?>">P<i class="pinterest square icon"></i></a>
-                    </div>
+                    <a class="ui circular pinterest icon button" href="<?php echo $agency_options['social_pinterest']; ?>">
+                        <i class="pinterest icon"></i>
+                    </a>
                 <?php endif; ?>
                 <?php if($agency_options['social_gplus']) : ?>
-                    <div class="item">
-                        <a href="<? echo $agency_options['social_gplus']; ?>">G<i class="google plus square icon"></i></a>
-                    </div>
+                    <a class="ui circular google plus icon button" href="<?php echo $agency_options['social_gplus']; ?>">
+                        <i class="google plus icon"></i>
+                    </a>
                 <?php endif; ?>
                 <?php if($agency_options['social_skype']) : ?>
-                    <div class="item">
-                        <a href="<?php echo $agency_options['social_skype']; ?>">S<i class="skype square icon"></i></a>
-                    </div>
+                    <a class="ui circular skype icon button" href="<?php echo $agency_options['social_skype']; ?>">
+                        <i class="skype icon"></i>
+                    </a>
                 <?php endif; ?>
                 <?php if($agency_options['social_instagram']) : ?>
-                    <div class="item">
-                        <a href="<?php $agency_options['social_instagram']; ?>">I<i class="instagram square icon"></i></a>
-                    </div>
+                    <a class="ui circular instagram icon button" href="<?php echo $agency_options['social_instagram']; ?>">
+                        <i class="instagram icon"></i>
+                    </a>
                 <?php endif; ?>
             </div>
 

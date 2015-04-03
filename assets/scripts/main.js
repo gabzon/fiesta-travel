@@ -28,13 +28,20 @@
               itemsDesktopSmall : [979,3]
           });
 
+          $('.gallery').owlCarousel({
+              navigation : true, // Show next and prev buttons
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem:true
+          });
+
           $('a[href*=#]:not([href=#])').click(function() {
               if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                   var target = $(this.hash);
                   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                   if (target.length) {
                       $('html,body').animate({
-                          scrollTop: target.offset().top
+                          scrollTop: (target.offset().top) - ($("header").outerHeight())
                       }, 1000);
                       return false;
                   }
@@ -50,6 +57,42 @@
               }
           });
 
+          var frominput = $('#departure').pickadate({
+              min : 1
+          });
+          var toinput = $('#return').pickadate();
+
+          var frompicker = frominput.pickadate('picker');
+          var topicker = toinput.pickadate('picker');
+
+          //Get the defaults value if are set
+          if ( frompicker.get('value') ) {
+              topicker.set('min', frompicker.get('select'));
+          }
+          if ( topicker.get('value') ) {
+              frompicker.set('max', topicker.get('select'));
+          }
+
+          // When something is selected, update the “from” and “to” limits.
+          frompicker.on('set', function(event) {
+              console.log(event);
+              if ( event.select ) {
+                  topicker.set('min', frompicker.get('select'));
+              }
+          });
+          topicker.on('set', function(event) {
+              if ( event.select ) {
+                  frompicker.set('max', topicker.get('select'));
+              }
+          });
+
+          $('#sidebar-toggle').on('click', function(event){
+              $('.left.sidebar').sidebar('toggle');
+          });
+
+          $('.left.sidebar .item').on('click', function(event){
+              $('.left.sidebar').sidebar('hide');
+          });
 
       },
       finalize: function() {

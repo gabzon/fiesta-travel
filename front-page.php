@@ -1,5 +1,3 @@
-<?php get_template_part('templates/header'); ?>
-
 <?php get_template_part('templates/frontpage/promotions'); ?>
 
 <?php get_template_part('templates/frontpage/services'); ?>

@@ -11,12 +11,12 @@
                     </div>
                     <div class="four wide column">
                         <div class="ui fluid input">
-                            <input type="text" placeholder="Departure">
+                            <input type="text" class="datepicker" name="departure" id="departure" placeholder="Departure">
                         </div>
                     </div>
                     <div class="four wide column">
                         <div class="ui fluid input">
-                            <input type="text" placeholder="Return">
+                            <input type="text" class="datepicker" name="return" id="return" placeholder="Return">
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="right aligned sixteen wide column">
+                        <button type="submit" class="ui primary button">Send</button>
+                </div>
             </div>
+            </div>
+
         </div>
     </div>
 </section>

@@ -5,9 +5,9 @@ Title: Social Networks
 // Let's create a text box field
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_facebook',
     'label' => __('Facebook'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -21,9 +21,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_twitter',
     'label' => __('Twitter'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -36,9 +36,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_gplus',
     'label' => __('Google+'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -51,9 +51,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_linkedin',
     'label' => __('LinkedIn'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -66,9 +66,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_instagram',
     'label' => __('Instagram'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -81,9 +81,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_pinterest',
     'label' => __('Pinterest'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
@@ -96,9 +96,9 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'scope' => 'post_meta',
     'field' => 'user_skype',
     'label' => __('Skype'),
+    'columns' => 6,
     'attributes' => array(
         'class' => 'text'
     ),
