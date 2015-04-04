@@ -1,9 +1,19 @@
-<?php use Roots\Sage\Nav; ?>
+<?php
+use Roots\Sage\Nav;
+$agency_options = get_option('agency_settings');
+$logo = $agency_options['agency_logo'];
+$phone = $agency_options['agency_phone'];
+?>
+
 <header id="menu" role="banner">
     <div class="ui stackable page grid">
         <div class="six wide column">
             <a href="<?php bloginfo('url'); ?>" class="home">
-                <img class="logo" src="//placehold.it/250x100" />
+                <?php if ($logo): ?>
+                    <img class="ui image logo" src="<?php echo wp_get_attachment_url($logo);?>" />
+                <?php else: ?>
+                    <img class="logo" src="//placehold.it/250x100" />
+                <?php endif; ?>
             </a>
         </div>
         <div class="ten wide column computer only">
@@ -25,7 +35,10 @@
                 </div>
                 <div class="item">
                     <div class="content">
-                        <a href="tel:022-305-3023">022-305-3023</a>
+                        <a href="tel:<?php echo $phone ?>">
+                            <i class="call icon"></i>
+                            <?php echo $phone; ?>
+                        </a>
                     </div>
                 </div>
             </div>
