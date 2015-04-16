@@ -14,7 +14,7 @@ function get_avatar_url($get_avatar){
                 <?php $user_query = new WP_User_Query(array('role' => 'editor')); ?>
 
                 <?php if ( !empty( $user_query->results ) ) : ?>
-                    <div class="ui stackable three column grid">
+                    <div class="ui stackable two column grid">
                         <?php foreach ( $user_query->results as $user ) : ?>
                             <div class="column">
                                 <div class="user-image">
@@ -44,21 +44,25 @@ function get_avatar_url($get_avatar){
 
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_twitter', true)) : ?>
-                                        <div class="item">
-                                            <a href="<? echo get_user_meta($user->ID, 'user_twitter', true); ?>">
+                                        <a href="<? echo get_user_meta($user->ID, 'user_twitter', true); ?>">
+                                            <div class="ui circular mini twitter icon button">
                                                 <i class="twitter square icon"></i>
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_pinterest', true)) : ?>
-                                        <div class="item">
-                                            <a href="<?php echo get_user_meta($user->ID, 'user_pinterest', true); ?>"><i class="pinterest square icon"></i></a>
-                                        </div>
+                                        <a href="<?php echo get_user_meta($user->ID, 'user_pinterest', true); ?>">
+                                            <div class="ui circular mini pinterest icon button">
+                                                <i class="pinterest square icon"></i>
+                                            </div>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_gplus', true)) : ?>
-                                        <div class="item">
-                                            <a href="<? echo get_user_meta($user->ID, 'user_gplus', true); ?>"><i class="google plus square icon"></i></a>
-                                        </div>
+                                        <a href="<? echo get_user_meta($user->ID, 'user_gplus', true); ?>">
+                                            <div class="ui circular mini google plus icon button">
+                                                <i class="google plus icon"></i>
+                                            </div>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_skype', true)) : ?>
                                         <div class="item">
@@ -73,6 +77,9 @@ function get_avatar_url($get_avatar){
                                 </div>
                             </div>
                         <?php endforeach; ?>
+                        <div class="column">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.777602124941!2d6.148177999999996!3d46.214879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6521905b8451%3A0x524bd241924ac13a!2sFiesta+Travel%2C+R%C3%B6schli!5e0!3m2!1sen!2sch!4v1429005082414" width="600" height="400" frameborder="0" style="border:0"></iframe>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>

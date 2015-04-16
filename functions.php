@@ -21,7 +21,8 @@ $sage_includes = [
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
   'lib/post-type',                 // Custom Post Types
-  'lib/taxonomie',                 // Custom Taxonomies
+  'lib/taxonomy',                  // Custom Taxonomies
+  'lib/wp-defaults.php'            // Wordpress Defaults
 ];
 
 foreach ($sage_includes as $file) {

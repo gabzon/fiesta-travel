@@ -1,9 +1,19 @@
+section#header-menu{
+    .mobile-menu{display:none;}
+}
 
-header#menu{
+@media all and (max-width: 630px){
+    section#header-menu {
+        .desktop-menu{display:none;}
+        .mobile-menu{display:block;}
+    }
+}
+
+header#menu-scroll{
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 108px;
     height: auto;
     //background: @ft-blue;
@@ -28,7 +38,7 @@ header#menu{
     }
 
     .ui.list>.item>.content{
-        font-size: 1.4em;
+        font-size: 1.2em;
         line-height: 6.9em;
         transition: all 0.4s ease;
 
@@ -41,7 +51,7 @@ header#menu{
 
 }
 
-header#menu.stick {
+header#menu-scroll.stick {
     position: fixed;
     font-size: 24px;
     line-height: 48px;
@@ -70,7 +80,7 @@ header#menu.stick {
 }
 
 @media only screen and (max-width: 767px){
-    header#menu{
+    header#menu-scroll{
         overflow: visible;
         height: auto;
 
@@ -84,7 +94,7 @@ header#menu.stick {
         }
     }
 
-    header#menu.stick{
+    header#menu-scroll.stick{
         position: fixed;
         font-size: 1em;
         line-height: 48px;

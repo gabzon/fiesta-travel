@@ -22,17 +22,18 @@
         // All pages
         'common': {
             init: function() {
+                $('.gallery').owlCarousel({
+                    //navigation : true, // Show next and prev buttons
+                    slideSpeed : 300,
+                    paginationSpeed : 400,
+                    items : 1
+                    //singleItem:true
+                });
+
                 $("#promotions-crousel").owlCarousel({
                     items : 3,
                     itemsDesktop : [1199,3],
                     itemsDesktopSmall : [979,3]
-                });
-
-                $('.gallery').owlCarousel({
-                    navigation : true, // Show next and prev buttons
-                    slideSpeed : 300,
-                    paginationSpeed : 400,
-                    singleItem:true
                 });
 
                 $('a[href*=#]:not([href=#])').click(function() {
@@ -65,7 +66,7 @@
                 var frompicker = frominput.pickadate('picker');
                 var topicker = toinput.pickadate('picker');
 
-                //Get the defaults value if are set
+
                 if ( frompicker.get('value') ) {
                     topicker.set('min', frompicker.get('select'));
                 }
@@ -80,6 +81,7 @@
                         topicker.set('min', frompicker.get('select'));
                     }
                 });
+
                 topicker.on('set', function(event) {
                     if ( event.select ) {
                         frompicker.set('max', topicker.get('select'));
@@ -97,6 +99,16 @@
                 $('.ui .checkbox').checkbox();
 
                 $('select.dropdown').dropdown();
+
+                $(function(){
+                    $('.mobile-menu').on('click', function(){
+                        $('#mobile-sidebar').sidebar('toggle');
+                    });
+                    $('#side-menu').on('click', function(){
+                        $('.book.sidebar').sidebar('toggle');
+                    });
+                });
+
             },
             finalize: function() {
 
@@ -117,6 +129,16 @@
         'about_us': {
             init: function() {
                 // JavaScript to be fired on the about us page
+            }
+        },
+        'catalog': {
+            init: function() {
+                $('.dimmable-image .image').dimmer({ on: 'hover' });
+            }
+        },
+        'single-product': {
+            init: function() {
+                alert('hello');
             }
         }
     };

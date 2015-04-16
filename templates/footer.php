@@ -3,7 +3,7 @@ $agency_options = get_option('agency_settings');
 $logo = $agency_options['agency_logo'];
 ?>
 
-<footer id="main-footer" class="ui basic segment">
+<div id="main-footer" class="ui basic segment">
 
     <div class="ui page grid">
         <div class="column">
@@ -105,4 +105,4 @@ $logo = $agency_options['agency_logo'];
         </div>
     </div>
 
-</footer>
+</div>

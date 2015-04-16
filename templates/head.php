@@ -5,6 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" type="application/rss+xml" title="<?= get_bloginfo('name'); ?> Feed" href="<?= esc_url(get_feed_link()); ?>">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700|Oswald:700' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
   </head>

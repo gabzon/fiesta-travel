@@ -5,7 +5,7 @@ $logo = $agency_options['agency_logo'];
 $phone = $agency_options['agency_phone'];
 ?>
 
-<header id="menu" role="banner">
+<header id="menu-scroll" role="banner">
     <div class="ui stackable page grid">
         <div class="six wide column">
             <a href="<?php bloginfo('url'); ?>" class="home">
@@ -20,17 +20,12 @@ $phone = $agency_options['agency_phone'];
             <div class="ui horizontal list">
                 <div class="item">
                     <div class="content">
-                        <a href="#services">Services</a>
+                        <a href="#details">Details</a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
                         <a href="#request">Request a travel</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="content">
-                        <a href="#about">About</a>
                     </div>
                 </div>
                 <div class="item">
