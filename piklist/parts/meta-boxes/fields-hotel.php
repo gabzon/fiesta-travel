@@ -59,7 +59,7 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'number',
+    'type' => 'text',
     'field' => 'hotel_number_rooms',
     'scope' => 'post_meta',
     'label' => __('Number of Rooms'),
