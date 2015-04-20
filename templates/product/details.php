@@ -25,7 +25,11 @@ $theme_list = wp_get_post_terms(get_the_ID(), 'theme', array("fields" => "names"
                 </tr>
                 <tr>
                     <td><i class="calendar icon"></i><strong>Number of days</strong></td>
-                    <td><?php echo get_post_meta(get_the_ID(), 'product_number_days', true) ?></td>
+                    <td><?php $number_days = get_post_meta(get_the_ID(), 'product_number_days', true); ?>
+                        <?php echo $number_days['product_days'][0].' '.__('Days', 'sage'); ?>
+                        /
+                        <?php echo $number_days['product_nights'][0].' '.__('Nights', 'sage'); ?>
+                    </td>
                 </tr>
                 <tr>
                     <td><i class="flag icon"></i><strong>Location</strong></td>
