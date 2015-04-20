@@ -84,6 +84,66 @@ piklist('field', array(
 ));
 
 piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'product_cancelation',
+    'scope' => 'post_meta',
+    'label' => __('Cancelation'),
+    'attributes' => array(
+        'rows' => 10,
+        'cols' => 50,
+        'class' => 'large-text code'
+    )
+));
+
+piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'product_payment',
+    'scope' => 'post_meta',
+    'label' => __('Payment Method'),
+    'attributes' => array(
+        'rows' => 10,
+        'cols' => 50,
+        'class' => 'large-text code'
+    )
+));
+
+piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'product_aditional_info',
+    'scope' => 'post_meta',
+    'label' => __('Aditional Information'),
+    'attributes' => array(
+        'rows' => 10,
+        'cols' => 50,
+        'class' => 'large-text code'
+    )
+));
+
+piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'product_flights',
+    'scope' => 'post_meta',
+    'label' => __('Flights'),
+    'attributes' => array(
+        'rows' => 10,
+        'cols' => 50,
+        'class' => 'large-text code'
+    )
+));
+
+piklist('field', array(
+    'type' => 'textarea',
+    'field' => 'product_hosting',
+    'scope' => 'post_meta',
+    'label' => __('Hosting'),
+    'attributes' => array(
+        'rows' => 10,
+        'cols' => 50,
+        'class' => 'large-text code'
+    )
+));
+
+piklist('field', array(
     'type' => 'text',
     'field' => 'product_slogan',
     'scope' => 'post_meta',
@@ -95,18 +155,39 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'number',
+    'type' => 'group',
     'field' => 'product_number_days',
     'scope' => 'post_meta',
     'label' => __('Number of Days'),
-    'attributes' => array(
-        'class' => 'regular-text',
-        'placeholder' => __('Enter the number of days')
-    ),
-    'validate' => array(
+    'list' => false,
+    'fields' => array(
         array(
-            'type' => 'number'
+            'type' => 'text',
+            'field' => 'product_days',
+            'columns' => 4,
+            'attributes' => array(
+                'placeholder' => __('Days')
+            ),
+            'validate' => array(
+                array(
+                    'type' => 'number'
+                )
+            )
+        ),
+        array(
+            'type' => 'text',
+            'field' => 'product_nights',
+            'columns' => 4,
+            'attributes' => array(
+                'placeholder' => __('Nights')
+            ),
+            'validate' => array(
+                array(
+                    'type' => 'number'
+                )
+            )
         )
     )
 ));
+
 ?>
