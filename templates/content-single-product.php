@@ -8,7 +8,10 @@
 
                 <div id="details" class="entry-content">
                     <?php get_template_part('templates/product/gallery'); ?>
-                    <?php the_content(); ?>
+                </div>
+
+                <div id="tabs">
+                    <?php get_template_part('templates/product/tabs'); ?>
                 </div>
 
                 <div class="form">
