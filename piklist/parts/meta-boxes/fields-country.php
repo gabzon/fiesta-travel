@@ -18,7 +18,7 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'number',
+    'type' => 'text',
     'field' => 'country_population',
     'scope' => 'post_meta',
     'label' => __('Population'),
@@ -34,7 +34,7 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'number',
+    'type' => 'text',
     'field' => 'country_surface',
     'scope' => 'post_meta',
     'label' => __('Surface'),
