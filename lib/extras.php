@@ -116,5 +116,3 @@ function new_excerpt_more( $excerpt ) {
     return '';
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\new_excerpt_more' );
-
-add_image_size( 'agency-promotion', 400, 250, true );
