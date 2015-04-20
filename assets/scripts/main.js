@@ -109,6 +109,8 @@
                     });
                 });
 
+                $('.tabular.menu .item').tab();
+
             },
             finalize: function() {
 
