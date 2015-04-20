@@ -16,9 +16,13 @@ function get_avatar_url($get_avatar){
                 <?php if ( !empty( $user_query->results ) ) : ?>
                     <div class="ui stackable two column grid">
                         <?php foreach ( $user_query->results as $user ) : ?>
-                            <div class="column">
+                            <div class="column center aligned">
                                 <div class="user-image">
-                                    <img class="ui image circular" style="display:inline" align="center" src="<? echo get_avatar_url(get_avatar( $user->user_email, 150 )); ?>"/>
+                                    <?php
+                                    $pictureID = get_user_meta($user->ID, 'user_picture', true);
+                                    echo wp_get_attachment_image($pictureID, array(150,150), false, array('class' => 'ui image circular centered'));
+                                    ?>
+                                    <!--<img class="ui image circular" style="display:inline" align="center" src="<?/* echo get_avatar_url(get_avatar( $user->user_email, 150 )); */?>"/>-->
                                 </div>
                                 <h3><?php echo $user->display_name; ?></h3>
                                 <p><?php echo get_user_meta($user->ID, 'description', true); ?></p>
@@ -27,7 +31,7 @@ function get_avatar_url($get_avatar){
                                         <div class="ui horizontal list">
                                             <?php foreach($languages as $language) : ?>
                                                 <div class="item">
-                                                    <?php _e($language); ?>
+                                                    <?php echo ucwords(__($language)); ?>
                                                 </div>
                                             <?php endforeach; ?>
                                         </div>
@@ -35,13 +39,11 @@ function get_avatar_url($get_avatar){
                                 </div>
                                 <div class="ui horizontal list">
                                     <?php if(get_user_meta($user->ID, 'user_facebook', true)) : ?>
-
                                         <a href="<?php echo get_user_meta($user->ID, 'user_facebook', true); ?>">
                                             <div class="ui circular mini facebook icon button">
                                                 <i class="facebook icon"></i>
                                             </div>
                                         </a>
-
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_twitter', true)) : ?>
                                         <a href="<? echo get_user_meta($user->ID, 'user_twitter', true); ?>">
@@ -65,14 +67,18 @@ function get_avatar_url($get_avatar){
                                         </a>
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_skype', true)) : ?>
-                                        <div class="item">
-                                            <a href="<?php echo get_user_meta($user->ID, 'user_skype', true); ?>"><i class="skype square icon"></i></a>
-                                        </div>
+                                        <a href="<? echo get_user_meta($user->ID, 'user_skype', true); ?>">
+                                            <div class="ui circular mini skype icon button">
+                                                <i class="skype icon"></i>
+                                            </div>
+                                        </a>
                                     <?php endif; ?>
                                     <?php if(get_user_meta($user->ID, 'user_instagram', true)) : ?>
-                                        <div class="item">
-                                            <a href="<?php get_user_meta($user->ID, 'user_instagram', true); ?>"><i class="instagram square icon"></i></a>
-                                        </div>
+                                        <a href="<? echo get_user_meta($user->ID, 'user_instagram', true); ?>">
+                                            <div class="ui circular mini instagram icon button">
+                                                <i class="instagram icon"></i>
+                                            </div>
+                                        </a>
                                     <?php endif; ?>
                                 </div>
                             </div>
