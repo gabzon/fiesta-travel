@@ -7,10 +7,16 @@
                 </div>
                 <div class="column">
                     <h1 class="massive-header"><?php _e('The best prices','sage') ?></h1>
-                    <h2 class="huge-header">
+                    <h2 class="huge-header ui header">
                         <i class="circular suitcase icon"></i>
-                        <?php _e('Travel with 2 luggages','sage'); ?>
+                        <div class="content">
+                            <?php _e('Travel with 2 luggages','sage'); ?>
+                            <div class="sub header">
+                                (*) <?php _e('According to the flights','sage'); ?>
+                            </div>
+                        </div>
                     </h2>
+
                 </div>
             </div>
         </div>

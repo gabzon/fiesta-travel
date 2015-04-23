@@ -6,6 +6,7 @@ $args = array (
 
 // The Query
 $products = new WP_Query( $args );
+
 ?>
 
 <div id="list-catalog" class="ui page grid">
