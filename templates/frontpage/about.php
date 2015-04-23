@@ -20,9 +20,10 @@ function get_avatar_url($get_avatar){
                                 <div class="user-image">
                                     <?php
                                     $pictureID = get_user_meta($user->ID, 'user_picture', true);
-                                    echo wp_get_attachment_image($pictureID, array(150,150), false, array('class' => 'ui image circular centered'));
+                                    if($pictureID){
+                                        echo wp_get_attachment_image($pictureID, array(150,150), false, array('class' => 'ui image circular centered'));
+                                    }
                                     ?>
-                                    <!--<img class="ui image circular" style="display:inline" align="center" src="<?/* echo get_avatar_url(get_avatar( $user->user_email, 150 )); */?>"/>-->
                                 </div>
                                 <h3><?php echo $user->display_name; ?></h3>
                                 <p><?php echo get_user_meta($user->ID, 'description', true); ?></p>

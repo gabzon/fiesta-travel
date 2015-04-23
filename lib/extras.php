@@ -92,7 +92,6 @@ function agency_restrict_manage_posts() {
 }
 add_action( 'restrict_manage_posts', __NAMESPACE__ . '\\agency_restrict_manage_posts' );
 
-
 function agency_setting_pages($pages) {
     $pages[] = array(
         'page_title' => __('Settings'),

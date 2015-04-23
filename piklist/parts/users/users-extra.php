@@ -122,4 +122,11 @@ piklist('field', array(
     )
 ));
 
+
+piklist('field', array(
+    'type' => 'file',
+    'field' => 'user_picture',
+    'label' => __('Picture','sage')
+));
+
 ?>
