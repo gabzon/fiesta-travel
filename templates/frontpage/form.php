@@ -6,18 +6,18 @@
                 <form class="ui form">
                     <div class="ui three column grid">
                         <div class="eight wide column">
-                            <div class="ui fluid input">
-                                <input type="text" placeholder="<?php _e('Destination','sage'); ?>">
+                            <div class="ui fluid input field">
+                                <input name="destination" id="destination" type="text" placeholder="<?php _e('Destination','sage'); ?>" />
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui fluid input">
-                                <input type="text" class="datepicker" name="departure" id="departure" placeholder="<?php _e('Departure date','sage'); ?>">
+                            <div class="ui fluid input field">
+                                <input name="departure" id="departure" type="text" class="datepicker" placeholder="<?php _e('Departure date','sage'); ?>">
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui fluid input">
-                                <input type="text" class="datepicker" name="return" id="return" placeholder="<?php _e('Return date','sage'); ?>">
+                            <div class="ui fluid input field">
+                                <input name="return" id="return" type="text" class="datepicker" placeholder="<?php _e('Return date','sage'); ?>">
                             </div>
                         </div>
                     </div>
@@ -25,8 +25,8 @@
                         <div class="column">
                             <div class="ui two column grid">
                                 <div class="column">
-                                    <div class="ui fluid input">
-                                        <select class="ui dropdown">
+                                    <div class="ui fluid input field">
+                                        <select name="adults" id="adults" class="ui dropdown">
                                             <option value=""><?php _e('Adults','sage'); ?></option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -42,8 +42,8 @@
                                     </div>
                                 </div>
                                 <div class="column">
-                                    <div class="ui fluid input">
-                                        <select class="ui dropdown">
+                                    <div class="ui fluid input field">
+                                        <select name="kids" id="kids" class="ui dropdown">
                                             <option value=""><?php _e('Kids','sage'); ?></option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -63,25 +63,25 @@
                                 <div class="column">
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="romance" type="checkbox">
                                             <label><?php _e('Romance','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="family" type="checkbox">
                                             <label><?php _e('Family','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="friends" type="checkbox">
                                             <label><?php _e('Friends','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="group" type="checkbox">
                                             <label><?php _e('Group','sage'); ?></label>
                                         </div>
                                     </div>
@@ -89,37 +89,37 @@
                                 <div class="column">
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="relaxation" type="checkbox">
                                             <label><?php _e('Relaxation','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="discovery" type="checkbox">
                                             <label><?php _e('Discovery & Leisure','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="culture" type="checkbox">
                                             <label><?php _e('Culture & History','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="business" type="checkbox">
                                             <label><?php _e('Business','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="adventure" type="checkbox">
                                             <label><?php _e('Adventure','sage'); ?></label>
                                         </div>
                                     </div>
                                     <div class="field">
                                         <div class="ui checkbox">
-                                            <input type="checkbox">
+                                            <input name="travel[]" value="fun" type="checkbox">
                                             <label><?php _e('Fun & Entertainment','sage'); ?></label>
                                         </div>
                                     </div>
@@ -127,13 +127,21 @@
                             </div>
                         </div>
                         <div class="column">
-                            <div class="ui fluid input">
-                                <textarea placeholder="<?php _e('Preferenes','sage'); ?>" class="ui textarea wide"></textarea>
+                            <div class="ui fluid input field">
+                                <textarea name="preferences" id="preferences" placeholder="<?php _e('Preferenes','sage'); ?>" class="ui textarea wide"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="right aligned sixteen wide column">
-                        <button type="submit" class="ui primary button"><?php _e('Send','sage'); ?></button>
+                        <input type="hidden" name="action" id="action" value="request-submit"/>
+                        <button type="submit" id="request-submit" class="ui primary button"><?php _e('Send','sage'); ?></button>
+                    </div>
+                    <div class="ui positive message positive-request hidden">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            <?php _e('Thanks', 'sage'); ?>
+                        </div>
+                        <p><?php _e('We\'ll contact you shortly', 'sage'); ?></p>
                     </div>
                 </form>
             </div>
