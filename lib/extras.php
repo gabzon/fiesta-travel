@@ -116,3 +116,30 @@ function new_excerpt_more( $excerpt ) {
     return '';
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\new_excerpt_more' );
+
+add_action( 'wp_ajax_nopriv_request-submit', __NAMESPACE__ . '\\request_submit');
+add_action( 'wp_ajax_request-submit', __NAMESPACE__ . '\\request_submit');
+
+function request_submit(){
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $data = $_POST;
+    $info = 'Destination: '.$data['destination'].'<br/>'
+        .'Departure Date: '.$data['departure'].'<br/>'
+        .'Return Date: '.$data['return'].'<br/>'
+        .'Adults: '.$data['adults'].'<br/>'
+        .'Kids: '.$data['kids'].'<br/>';
+
+    $info .= 'Type of travel: <br/><ul style="margin: 0; padding: 0;">';
+    foreach($data['travel'] as $travel){
+        $info .= '<li>'.ucwords($travel).'</li>';
+    }
+    $info.= '</ul>';
+
+    $info .= 'Preferences: '.$data['preferences'];
+
+    $admin_email = get_option( 'admin_email' );
+
+    wp_mail( $admin_email, __('New Request', 'sage'), $info, $headers);
+    exit;
+}
+
