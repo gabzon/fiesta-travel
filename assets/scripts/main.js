@@ -111,6 +111,10 @@
 
                 $('.tabular.menu .item').tab();
 
+                $('.message .close').on('click', function() {
+                    $(this).closest('.message').fadeOut();
+                });
+
             },
             finalize: function() {
 
@@ -121,6 +125,85 @@
         // Home page
         'home': {
             init: function() {
+                validationRules =
+                {
+                    destination: {
+                        identifier  : 'destination',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your destination'
+                            }
+                        ]
+                    },
+                    departure: {
+                        identifier  : 'departure',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter the departure date'
+                            }
+                        ]
+                    },
+                    return: {
+                        identifier  : 'return',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter the return date'
+                            }
+                        ]
+                    },
+                    adults: {
+                        identifier  : 'adults',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter the number of adults'
+                            }
+                        ]
+                    },
+                    kids: {
+                        identifier  : 'kids',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter the number of kids'
+                            }
+                        ]
+                    },
+                    travel: {
+                        identifier  : 'travel',
+                        rules: [
+                            {
+                                type   : 'checked',
+                                prompt : 'Please select at least one type of travel'
+                            }
+                        ]
+                    }
+                };
+
+                $('.ui.form')
+                    .form(validationRules,
+                    {
+                        onSuccess : function(){
+                            var form = $('.ui.form');
+                            var submitButton = $('#request-submit');
+                            allFields = form.form('get values');
+                            submitButton.addClass('loading');
+                            $.ajax({
+                                method: "POST",
+                                url: sage_vars.ajaxurl,
+                                data: allFields
+                            })
+                                .done(function( msg ) {
+                                    submitButton.removeClass('loading');
+                                    $('.positive-request').removeClass('hidden');
+                                    form.form('clear');
+                                });
+                            return false;
+                        }
+                    });
 
             },
             finalize: function() {

@@ -1,10 +1,3 @@
-<?php
-function get_avatar_url($get_avatar){
-    preg_match("/src='(.*?)'/i", $get_avatar, $matches);
-    return $matches[1];
-}
-?>
-
 <section id="about" class="ui basic segment fullheight">
     <div class="segment-content">
         <div class="ui page grid">
