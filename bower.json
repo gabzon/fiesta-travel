@@ -12,7 +12,8 @@
     "semantic-ui": "~1.11.4",
     "owlcarousel": "1.3.x",
     "isotope": "~2.1.1",
-    "pickadate": "~3.5.5"
+    "pickadate": "~3.5.5",
+    "angular": "~1.3.15"
   },
   "overrides": {
     "modernizr": {
@@ -47,15 +48,21 @@
         "./js/layout-modes/masonry.js"
       ]
     },
-    "pickadate" : {
-        "main": [
-            "./lib/picker.js",
-            "./lib/picker.date.js",
-            "./lib/picker.time.js",
-            "./lib/themes/classic.css",
-            "./lib/themes/classic.date.css",
-            "./lib/themes/classic.time.css"
-        ]
+    "pickadate": {
+      "main": [
+        "./lib/picker.js",
+        "./lib/picker.date.js",
+        "./lib/picker.time.js",
+        "./lib/themes/classic.css",
+        "./lib/themes/classic.date.css",
+        "./lib/themes/classic.time.css"
+      ]
+    },
+    "angular": {
+      "main":[
+        "./angular-csp.css",
+        "./angular.js"
+      ]
     }
   }
 }

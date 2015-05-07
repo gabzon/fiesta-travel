@@ -4,19 +4,19 @@ namespace Agency\PostType\Testimonial;
 function setup_custom_post() {
 
     $labels = array(
-        'name' => 'Testimonials',
-        'singular_name' => 'Testimonial',
-        'menu_name' => 'Testimonials',
-        'parent_item_colon' => 'Parent Testimonial:',
-        'all_items' => 'All Testimonials',
-        'view_item' => 'View Testimonial',
-        'add_new_item' => 'Add New Testimonial',
-        'add_new' => 'Add New',
-        'edit_item' => 'Edit Testimonial',
-        'update_item' => 'Update Testimonial',
-        'search_items' => 'Search Testimonial',
-        'not_found' => 'Not found',
-        'not_found_in_trash' => 'Not found in Trash',
+        'name' => __('Testimonials', 'sage'),
+        'singular_name' => __('Testimonial', 'sage'),
+        'menu_name' => __('Testimonials', 'sage'),
+        'parent_item_colon' => __('Parent Testimonial:', 'sage'),
+        'all_items' => __('All Testimonials', 'sage'),
+        'view_item' => __('View Testimonial', 'sage'),
+        'add_new_item' => __('Add New Testimonial', 'sage'),
+        'add_new' => __('Add New', 'sage'),
+        'edit_item' => __('Edit Testimonial', 'sage'),
+        'update_item' => __('Update Testimonial', 'sage'),
+        'search_items' => __('Search Testimonial', 'sage'),
+        'not_found' => __('Not found', 'sage'),
+        'not_found_in_trash' => __('Not found in Trash', 'sage'),
     );
 
     $args = array(

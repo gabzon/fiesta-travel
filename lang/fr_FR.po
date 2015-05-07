@@ -1,0 +1,1160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sevinci Agency\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 15:40+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ./templates\n"
+"X-Poedit-SearchPath-2: ./lib\n"
+
+#: lib/extras.php:31
+msgid "Continued"
+msgstr "Suite"
+
+#: lib/extras.php:45
+msgid "Customer"
+msgstr "Client"
+
+#: lib/extras.php:46
+msgid "Agent"
+msgstr "Agent"
+
+#: lib/extras.php:47
+msgid "Manager"
+msgstr "Manager"
+
+#: lib/extras.php:71
+msgid "is not a number"
+msgstr "n'est pas un numéro"
+
+#: lib/extras.php:87
+msgid "Show All"
+msgstr "Tout afficher "
+
+#: lib/extras.php:97 lib/extras.php:98
+msgid "Settings"
+msgstr "Paramètres"
+
+#: lib/extras.php:107
+msgid "Save Settings"
+msgstr "Enregistrer les paramètres"
+
+#: lib/extras.php:142
+msgid "New Request"
+msgstr "Nouveau devis"
+
+#: lib/init.php:22
+msgid "Primary Navigation"
+msgstr "Navigation Primaire"
+
+#: lib/init.php:49
+msgid "Primary"
+msgstr "Premier"
+
+#: lib/init.php:58
+msgid "Footer"
+msgstr "Pied de page"
+
+#: lib/post-type/country.php:7 lib/post-type/country.php:9
+msgid "Countries"
+msgstr "Pays"
+
+#: lib/post-type/country.php:8
+#: piklist/parts/settings/information-settings.php:68
+msgid "Country"
+msgstr "Pays"
+
+#: lib/post-type/country.php:10
+msgid "Parent Country:"
+msgstr "Pays parent:"
+
+#: lib/post-type/country.php:11
+msgid "All Countries"
+msgstr "tous les pays"
+
+#: lib/post-type/country.php:12
+msgid "View Country"
+msgstr "Voir pays"
+
+#: lib/post-type/country.php:13
+msgid "Add New Country"
+msgstr "Ajouter un nouveau pays"
+
+#: lib/post-type/country.php:14 lib/post-type/hotel.php:14
+#: lib/post-type/product.php:14 lib/post-type/quote.php:14
+#: lib/post-type/testimonial.php:14
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+#: lib/post-type/country.php:15
+msgid "Edit Country"
+msgstr "Editer pays"
+
+#: lib/post-type/country.php:16
+msgid "Update Country"
+msgstr "Actualiser pays"
+
+#: lib/post-type/country.php:17
+msgid "Search Country"
+msgstr "Chercher pays"
+
+#: lib/post-type/country.php:18 lib/post-type/hotel.php:18
+#: lib/post-type/product.php:18 lib/post-type/quote.php:18
+#: lib/post-type/testimonial.php:18
+msgid "Not found"
+msgstr "Pas trouvé"
+
+#: lib/post-type/country.php:19 lib/post-type/hotel.php:19
+#: lib/post-type/product.php:19 lib/post-type/quote.php:19
+#: lib/post-type/testimonial.php:19
+msgid "Not found in Trash"
+msgstr "Pas trouvé dans la corbeille"
+
+#: lib/post-type/hotel.php:7 lib/post-type/hotel.php:9
+msgid "Hotels"
+msgstr "Hôtels"
+
+#: lib/post-type/hotel.php:8
+msgid "Hotel"
+msgstr "Hotel"
+
+#: lib/post-type/hotel.php:10
+msgid "Parent Hotel:"
+msgstr "Hôtel parent :"
+
+#: lib/post-type/hotel.php:11
+msgid "All Hotels"
+msgstr "Tous les hôtels"
+
+#: lib/post-type/hotel.php:12
+msgid "View Hotel"
+msgstr "Voir hotel"
+
+#: lib/post-type/hotel.php:13
+msgid "Add New Hotel"
+msgstr "Ajouter nouveau hôtel"
+
+#: lib/post-type/hotel.php:15
+msgid "Edit Hotel"
+msgstr "Editer hôtel"
+
+#: lib/post-type/hotel.php:16
+msgid "Update Hotel"
+msgstr "Actualiser hôtel"
+
+#: lib/post-type/hotel.php:17
+msgid "Search Hotel"
+msgstr "Chercher hôtel"
+
+#: lib/post-type/product.php:7 lib/post-type/product.php:9
+msgid "Products"
+msgstr "Produits"
+
+#: lib/post-type/product.php:8
+msgid "Product"
+msgstr "Produit"
+
+#: lib/post-type/product.php:10
+msgid "Parent Item:"
+msgstr "Article parent:"
+
+#: lib/post-type/product.php:11
+msgid "All Products"
+msgstr "Tous les produits"
+
+#: lib/post-type/product.php:12
+msgid "View Product"
+msgstr "Voir produit"
+
+#: lib/post-type/product.php:13
+msgid "Add New Product"
+msgstr "Ajouter nouveau produit"
+
+#: lib/post-type/product.php:15
+msgid "Edit Product"
+msgstr "Editer produit"
+
+#: lib/post-type/product.php:16
+msgid "Update Product"
+msgstr "Actualiser produit"
+
+#: lib/post-type/product.php:17
+msgid "Search Product"
+msgstr "Chercher produit"
+
+#: lib/post-type/quote.php:7 lib/post-type/quote.php:9
+msgid "Quotes"
+msgstr "Devis"
+
+#: lib/post-type/quote.php:8
+msgid "Quote"
+msgstr "Devis"
+
+#: lib/post-type/quote.php:10
+msgid "Parent Quote:"
+msgstr "Devis parent:"
+
+#: lib/post-type/quote.php:11
+msgid "All Quotes"
+msgstr "Tous les devis"
+
+#: lib/post-type/quote.php:12
+msgid "View Quote"
+msgstr "Voir devis"
+
+#: lib/post-type/quote.php:13
+msgid "Add New Quote"
+msgstr "Ajouter nouveau devis"
+
+#: lib/post-type/quote.php:15
+msgid "Edit Quote"
+msgstr "Editer devis"
+
+#: lib/post-type/quote.php:16
+msgid "Update Quote"
+msgstr "Actualiser devis"
+
+#: lib/post-type/quote.php:17
+msgid "Search Quote"
+msgstr "Chercher devis"
+
+#: lib/post-type/testimonial.php:7 lib/post-type/testimonial.php:9
+msgid "Testimonials"
+msgstr "Témoignages"
+
+#: lib/post-type/testimonial.php:8
+msgid "Testimonial"
+msgstr "Témoignage"
+
+#: lib/post-type/testimonial.php:10
+msgid "Parent Testimonial:"
+msgstr "Témoignage parent:"
+
+#: lib/post-type/testimonial.php:11
+msgid "All Testimonials"
+msgstr "Tous les témoignages"
+
+#: lib/post-type/testimonial.php:12
+msgid "View Testimonial"
+msgstr "Voir témoignages"
+
+#: lib/post-type/testimonial.php:13
+msgid "Add New Testimonial"
+msgstr "Ajouter nouveau témoignage"
+
+#: lib/post-type/testimonial.php:15
+msgid "Edit Testimonial"
+msgstr "Editer témoignages"
+
+#: lib/post-type/testimonial.php:16
+msgid "Update Testimonial"
+msgstr "Actualiser témoignage"
+
+#: lib/post-type/testimonial.php:17
+msgid "Search Testimonial"
+msgstr "Chercher témoignages"
+
+#: lib/titles.php:13
+msgid "Latest Posts"
+msgstr "Derniers Articles"
+
+#: lib/titles.php:18
+#, php-format
+msgid "Search Results for %s"
+msgstr "Résultats de la recherche pour %s"
+
+#: lib/titles.php:20
+msgid "Not Found"
+msgstr "Pas trouvé"
+
+#: templates/catalog/isotop-top.php:13
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: templates/catalog/isotop-top.php:17
+msgid "All"
+msgstr "Tout"
+
+#: templates/catalog/list.php:27 templates/content-single-country.php:41
+msgid "More info"
+msgstr "Plus d'info"
+
+#: templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr "&larr; Commentaires plus anciens"
+
+#: templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr "Commentaires plus récents &rarr;"
+
+#: templates/comments.php:31
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: templates/content-page.php:2 templates/content-single-product.php:22
+#: templates/content-single.php:11
+msgid "Pages:"
+msgstr "Pages :"
+
+#: templates/content-single-country.php:32
+msgid "Offers"
+msgstr "Offres"
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr "Par"
+
+#: templates/frontpage/about.php:5
+msgid "about"
+msgstr "à propos"
+
+#: templates/frontpage/form.php:5
+msgid "Request"
+msgstr "Devis"
+
+#: templates/frontpage/form.php:10
+msgid "Destination"
+msgstr "Destination"
+
+#: templates/frontpage/form.php:15
+msgid "Departure date"
+msgstr "Date de départ"
+
+#: templates/frontpage/form.php:20
+msgid "Return date"
+msgstr "Date de retour"
+
+#: templates/frontpage/form.php:30
+msgid "Adults"
+msgstr "Adultes"
+
+#: templates/frontpage/form.php:40 templates/frontpage/form.php:57
+msgid "More"
+msgstr "Plus"
+
+#: templates/frontpage/form.php:47
+msgid "Kids"
+msgstr "Enfants"
+
+#: templates/frontpage/form.php:67
+msgid "Romance"
+msgstr "Romantique"
+
+#: templates/frontpage/form.php:73
+msgid "Family"
+msgstr "Famille"
+
+#: templates/frontpage/form.php:79
+msgid "Friends"
+msgstr "Amis"
+
+#: templates/frontpage/form.php:85
+msgid "Group"
+msgstr "Groupe"
+
+#: templates/frontpage/form.php:93
+msgid "Relaxation"
+msgstr "Détente"
+
+#: templates/frontpage/form.php:99
+msgid "Discovery & Leisure"
+msgstr "Découverte et Loisirs"
+
+#: templates/frontpage/form.php:105
+msgid "Culture & History"
+msgstr "Culture et Histoire"
+
+#: templates/frontpage/form.php:111
+msgid "Business"
+msgstr "Business"
+
+#: templates/frontpage/form.php:117
+msgid "Adventure"
+msgstr "Aventure"
+
+#: templates/frontpage/form.php:123
+msgid "Fun & Entertainment"
+msgstr "Divertissements"
+
+#: templates/frontpage/form.php:131
+msgid "Preferences"
+msgstr "Préférences"
+
+#: templates/frontpage/form.php:137
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/frontpage/form.php:142
+msgid "Thanks"
+msgstr "Merci"
+
+#: templates/frontpage/form.php:144
+msgid "We'll contact you shortly"
+msgstr "Nous vous contacterons prochainement"
+
+#: templates/frontpage/landing.php:7
+msgid "The best prices"
+msgstr "Les meilleurs prix"
+
+#: templates/frontpage/landing.php:11
+msgid "Travel with 2 luggages"
+msgstr "Voyagez avec 2 bagages"
+
+#: templates/frontpage/landing.php:13
+msgid "According to the flights"
+msgstr "Offre valable selon certain conditions"
+
+#: templates/frontpage/promotions.php:8
+msgid "promotions"
+msgstr "promotions"
+
+#: templates/frontpage/services.php:7
+msgid "Pre-reservation"
+msgstr "Pre-réservation"
+
+#: templates/frontpage/services.php:9
+msgid ""
+"With fiesta travel you get the opportunity to make reservations without "
+"making any down paiments. No more raise of pricing"
+msgstr ""
+"Avec Fiesta Travel vous avez la possibilité de réserver vos vols en nous "
+"versant un simple acompte et vous offre des facilités de paiement."
+
+#: templates/frontpage/services.php:17
+msgid "Luggage"
+msgstr "Bagage"
+
+#: templates/frontpage/services.php:19
+msgid ""
+"Take two luggages instead of one! Fiesta travel have special deal for extra "
+"luggage. Next time someone asks you to bring them something, say yes!"
+msgstr ""
+"Emportez avec vous deux bagages au lieu d’un seul ! Fiesta Travel bénéficie "
+"d’offre spéciale pour les bagages supplémentaires."
+
+#: templates/frontpage/services.php:26
+msgid "Group offers"
+msgstr "Offre de groupes"
+
+#: templates/frontpage/services.php:28
+msgid ""
+"We organise trips the best groups deals. Our team and our partners would be "
+"glad to organize, plan and service you during your family, group or business "
+"trips"
+msgstr ""
+"Nous organisons des voyages de groupes à des tarifs très avantageux. Notre "
+"équipe et nos partenaires seront heureux de créer, d’organiser et de vous "
+"accompagner pendant votre voyage avec votre association sportive, votre "
+"entreprise ou vos amis !"
+
+#: templates/frontpage/services.php:35
+msgid "Best deals"
+msgstr "Les meilleures offres"
+
+#: templates/frontpage/services.php:37
+msgid ""
+"Our commitment to our clients is not only in the best services, but also at "
+"the best price. Our partners in south america will give you the best prices "
+"you can ever find."
+msgstr ""
+"Notre engagement auprès de nos clients n’est pas seulement dans la qualité "
+"de service mais aussi le meilleur prix. Avec nos partenaires en Amérique du "
+"sud, nous vous offrons les tarifs les plus compétitifs."
+
+#: templates/header/header-scroll.php:23
+msgid "Promotions"
+msgstr "Promotions"
+
+#: templates/header/header-scroll.php:28
+#: piklist/parts/meta-boxes/fields-hotel.php:81
+msgid "Services"
+msgstr "Services"
+
+#: templates/header/header-scroll.php:33
+msgid "Request a travel"
+msgstr "Demande de devis"
+
+#: templates/header/header-scroll.php:38
+msgid "About"
+msgstr "A propos"
+
+#: templates/product/details.php:15
+msgid "Details"
+msgstr "Détails"
+
+#: templates/product/details.php:29
+#: piklist/parts/meta-boxes/fields-product.php:169
+msgid "Days"
+msgstr "Jours"
+
+#: templates/product/details.php:31
+#: piklist/parts/meta-boxes/fields-product.php:182
+msgid "Nights"
+msgstr "Nuits"
+
+#: templates/product/details.php:51
+msgid "Order"
+msgstr "Ordre"
+
+#: templates/product/tabs.php:11
+msgid "Itinerary"
+msgstr "Itinéraire"
+
+#: templates/product/tabs.php:14
+#: piklist/parts/meta-boxes/fields-product.php:138
+msgid "Hosting"
+msgstr "Hébergement"
+
+#: templates/product/tabs.php:18
+#: piklist/parts/meta-boxes/fields-product.php:126
+msgid "Flights"
+msgstr "Vols"
+
+#: templates/product/tabs.php:22
+msgid "Additional info"
+msgstr "Information additionnelle"
+
+#: templates/product/tabs.php:26
+msgid "Payment"
+msgstr "Paiement"
+
+#: templates/product/tabs.php:48
+#: piklist/parts/meta-boxes/fields-product.php:66
+msgid "Included"
+msgstr "Compris"
+
+#: templates/product/tabs.php:53
+#: piklist/parts/meta-boxes/fields-product.php:78
+msgid "Not Included"
+msgstr "Pas compris"
+
+#: templates/product/tabs.php:64
+#: piklist/parts/meta-boxes/fields-product.php:90
+msgid "Cancelation"
+msgstr "Annulation"
+
+#: templates/searchform.php:2
+msgid "Search for:"
+msgstr "Rechercher pour :"
+
+#: templates/searchform.php:4 templates/searchform.php:6
+msgid "Search"
+msgstr "Recherche"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Désolé, mais la page que vous essayiez de voir n'existe pas."
+
+#: base.php:25
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"Vous utilisez un navigateur <strong>obsolète</strong>. S'il vous plaît <a "
+"href=\"http://browsehappy.com/\">mettez à niveau</a>votre navigateur pour "
+"améliorer votre expérience."
+
+#: functions.php:30
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "Erreur en localisant %s pour l'inclusion"
+
+#: index.php:5
+msgid "Sorry, no results were found."
+msgstr "Désolé, aucun résultat n'a été trouvé."
+
+#: piklist/parts/media/media-source.php:11
+#: piklist/parts/media/media-source.php:14
+msgid "Author"
+msgstr "Auteur"
+
+#: piklist/parts/meta-boxes/fields-country.php:13
+msgid "Capital"
+msgstr "Capital"
+
+#: piklist/parts/meta-boxes/fields-country.php:16
+msgid "Enter the capital"
+msgstr "Entrez la capital"
+
+#: piklist/parts/meta-boxes/fields-country.php:24
+msgid "Population"
+msgstr "Population"
+
+#: piklist/parts/meta-boxes/fields-country.php:27
+msgid "Enter the population"
+msgstr "Entrez la population"
+
+#: piklist/parts/meta-boxes/fields-country.php:40
+msgid "Surface"
+msgstr "Surface"
+
+#: piklist/parts/meta-boxes/fields-country.php:43
+msgid "Enter the surface"
+msgstr "Entrez la surface"
+
+#: piklist/parts/meta-boxes/fields-country.php:56
+msgid "Religion"
+msgstr "Religion"
+
+#: piklist/parts/meta-boxes/fields-country.php:59
+msgid "Enter the religion"
+msgstr "Entrez la religion"
+
+#: piklist/parts/meta-boxes/fields-country.php:67
+msgid "Currency"
+msgstr "Devise"
+
+#: piklist/parts/meta-boxes/fields-country.php:70
+msgid "Enter the currency"
+msgstr "Entrez la devise"
+
+#: piklist/parts/meta-boxes/fields-country.php:78
+#: piklist/parts/meta-boxes/fields-product.php:55
+msgid "Photo Gallery"
+msgstr "Galerie de photos"
+
+#: piklist/parts/meta-boxes/fields-country.php:80
+msgid "Add Photo(s)"
+msgstr "Ajouter photo(s)"
+
+#: piklist/parts/meta-boxes/fields-country.php:81
+msgid "Add Photos"
+msgstr "Ajouter photos"
+
+#: piklist/parts/meta-boxes/fields-country.php:89
+msgid "Flag"
+msgstr "Drapeau"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:13
+msgid "Stars"
+msgstr "étoiles"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:28
+#: piklist/parts/meta-boxes/fields-hotel.php:34
+#: piklist/parts/meta-boxes/fields-hotel.php:37
+#: piklist/parts/settings/information-settings.php:35
+msgid "Address"
+msgstr "Adresse"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:43
+#: piklist/parts/meta-boxes/fields-hotel.php:46
+#: piklist/parts/settings/information-settings.php:46
+msgid "Postal Code"
+msgstr "Code postal"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:52
+#: piklist/parts/meta-boxes/fields-hotel.php:55
+#: piklist/parts/settings/information-settings.php:57
+msgid "City"
+msgstr "Ville"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:65
+msgid "Number of Rooms"
+msgstr "Numéro de chambres"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:68
+msgid "Enter the number of rooms"
+msgstr "Entrez le nombre de chambres"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:84
+msgid "Parking"
+msgstr "Parking"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:85
+msgid "Internet"
+msgstr "Internet"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:86
+msgid "Swiming Pool"
+msgstr "Piscine"
+
+#: piklist/parts/meta-boxes/fields-hotel.php:87
+msgid "TV"
+msgstr "TV"
+
+#: piklist/parts/meta-boxes/fields-product.php:13
+#: piklist/parts/meta-boxes/fields-product.php:40
+msgid "Price"
+msgstr "Prix"
+
+#: piklist/parts/meta-boxes/fields-product.php:16
+#: piklist/parts/meta-boxes/fields-product.php:45
+msgid "Enter the price"
+msgstr "Entrez le prix"
+
+#: piklist/parts/meta-boxes/fields-product.php:24
+msgid "Price for date"
+msgstr "Prix par date"
+
+#: piklist/parts/meta-boxes/fields-product.php:30
+msgid "Date"
+msgstr "Date"
+
+#: piklist/parts/meta-boxes/fields-product.php:41
+msgid "Description Price"
+msgstr "Description du prix"
+
+#: piklist/parts/meta-boxes/fields-product.php:57
+msgid "Add Picture(s)"
+msgstr "Ajouter image(s)"
+
+#: piklist/parts/meta-boxes/fields-product.php:58
+msgid "Add Pictures"
+msgstr "Ajouter images"
+
+#: piklist/parts/meta-boxes/fields-product.php:102
+msgid "Payment Method"
+msgstr "Mode de paiements"
+
+#: piklist/parts/meta-boxes/fields-product.php:114
+msgid "Aditional Information"
+msgstr "Information additionnelle"
+
+#: piklist/parts/meta-boxes/fields-product.php:150
+msgid "Slogan"
+msgstr "Slogan"
+
+#: piklist/parts/meta-boxes/fields-product.php:153
+msgid "Enter the slogan"
+msgstr "Entrez le slogan"
+
+#: piklist/parts/meta-boxes/fields-product.php:161
+msgid "Number of Days"
+msgstr "Nombre de jours"
+
+#: piklist/parts/settings/information-settings.php:11
+msgid "Logo"
+msgstr "Logo"
+
+#: piklist/parts/settings/information-settings.php:13
+#: piklist/parts/settings/information-settings.php:14
+#: piklist/parts/settings/partner-settings.php:42
+#: piklist/parts/settings/partner-settings.php:43
+msgid "Add Logo"
+msgstr "Ajouter logo"
+
+#: piklist/parts/settings/information-settings.php:22
+msgid "Agency Description"
+msgstr "Description de l'agence"
+
+#: piklist/parts/settings/information-settings.php:27
+msgid "Enter the agency description"
+msgstr "Entrez la description de l'agence"
+
+#: piklist/parts/settings/information-settings.php:38
+msgid "Enter the agency address"
+msgstr "Entrez l'adresse de l'agence"
+
+#: piklist/parts/settings/information-settings.php:49
+msgid "Enter the agency postal code"
+msgstr "Entrez le code postal de l'agence"
+
+#: piklist/parts/settings/information-settings.php:60
+msgid "Enter the agency city"
+msgstr "Entrez la ville de l'agence"
+
+#: piklist/parts/settings/information-settings.php:71
+msgid "Enter the agency country"
+msgstr "Entrez le pays de l'agence"
+
+#: piklist/parts/settings/information-settings.php:79
+msgid "Email"
+msgstr "Email"
+
+#: piklist/parts/settings/information-settings.php:82
+msgid "Enter the agency email"
+msgstr "Entrez l'email de l'agence"
+
+#: piklist/parts/settings/information-settings.php:90
+msgid "Phone"
+msgstr "Téléphone"
+
+#: piklist/parts/settings/information-settings.php:93
+msgid "Enter the agency phone"
+msgstr "Entrez le téléphone de l'agence"
+
+#: piklist/parts/settings/information-settings.php:101
+msgid "Fax"
+msgstr "Fax"
+
+#: piklist/parts/settings/information-settings.php:104
+msgid "Enter the agency fax"
+msgstr "Entrez le fax de l'agence"
+
+#: piklist/parts/settings/information-settings.php:112
+msgid "Schedule"
+msgstr "Calendrier"
+
+#: piklist/parts/settings/information-settings.php:117
+msgid "Enter the agency schedule"
+msgstr "Entrez le calendrier de l'agence"
+
+#: piklist/parts/settings/information-settings.php:129
+msgid "Yes"
+msgstr "Oui"
+
+#: piklist/parts/settings/information-settings.php:130
+msgid "No"
+msgstr "Non"
+
+#: piklist/parts/settings/partner-settings.php:12
+msgid "Partners"
+msgstr "Partenaires"
+
+#: piklist/parts/settings/partner-settings.php:20
+msgid "Partner Name"
+msgstr "Nom du partenaire"
+
+#: piklist/parts/settings/partner-settings.php:23
+msgid "Enter the partner name"
+msgstr "Entrez le nom du partenaire"
+
+#: piklist/parts/settings/partner-settings.php:30
+msgid "Partner Website"
+msgstr "Site web du partenaire"
+
+#: piklist/parts/settings/partner-settings.php:33
+msgid "Enter the partner website"
+msgstr "Entrez le site web du partenaire"
+
+#: piklist/parts/settings/partner-settings.php:40
+msgid "Partner Logo"
+msgstr "Logo du partenaire"
+
+#: piklist/parts/settings/social-settings.php:13
+#: piklist/parts/users/users-extra.php:9
+msgid "Facebook"
+msgstr "Facebook"
+
+#: piklist/parts/settings/social-settings.php:16
+msgid "Enter the agency Facebook"
+msgstr "Entrez le lien Facebook de l'agence"
+
+#: piklist/parts/settings/social-settings.php:29
+#: piklist/parts/users/users-extra.php:25
+msgid "Twitter"
+msgstr "Twitter"
+
+#: piklist/parts/settings/social-settings.php:32
+msgid "Enter the agency Twitter"
+msgstr "Entrez le lien twitter de l'agence"
+
+#: piklist/parts/settings/social-settings.php:45
+#: piklist/parts/users/users-extra.php:85
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: piklist/parts/settings/social-settings.php:48
+msgid "Enter the agency Pinterest"
+msgstr "Entrez le lien Pinterest de l'agence"
+
+#: piklist/parts/settings/social-settings.php:61
+#: piklist/parts/users/users-extra.php:55
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: piklist/parts/settings/social-settings.php:64
+msgid "Enter the agency LinkedIn"
+msgstr "Entrez le lien linkedin de l'agence"
+
+#: piklist/parts/settings/social-settings.php:77
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: piklist/parts/settings/social-settings.php:80
+msgid "Enter the agency Google Plus"
+msgstr "Entrez le lien google plus de l'agence"
+
+#: piklist/parts/settings/social-settings.php:93
+#: piklist/parts/users/users-extra.php:100
+msgid "Skype"
+msgstr "Skype"
+
+#: piklist/parts/settings/social-settings.php:96
+msgid "Enter the agency Skype"
+msgstr "Entrez le nom skype de l'agence"
+
+#: piklist/parts/settings/social-settings.php:109
+#: piklist/parts/users/users-extra.php:70
+msgid "Instagram"
+msgstr "Instagram"
+
+#: piklist/parts/settings/social-settings.php:112
+msgid "Enter the agency Instagram"
+msgstr "Entrez le lien instagram de l'agence"
+
+#: piklist/parts/users/users-extra.php:40
+msgid "Google+"
+msgstr "Google+"
+
+#: piklist/parts/users/users-extra.php:115
+msgid "Languages Spoken"
+msgstr "Langues parlées"
+
+#: piklist/parts/users/users-extra.php:118
+msgid "English"
+msgstr "Anglais"
+
+#: piklist/parts/users/users-extra.php:119
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: piklist/parts/users/users-extra.php:120
+msgid "French"
+msgstr "Français"
+
+#: piklist/parts/users/users-extra.php:121
+msgid "Italian"
+msgstr "Italian"
+
+#: piklist/parts/users/users-extra.php:129
+msgid "Picture"
+msgstr "Photo"
+
+#: piklist/piklist-checker.php:128
+msgid "Your theme requires PIKLIST to work properly."
+msgstr ""
+"Votre thème nécessite l'extension Piklist pour fonctionner correctement."
+
+#: piklist/piklist-checker.php:138
+msgid "The following plugin(s) require PIKLIST, and have been deactivated:"
+msgstr "L'extenstion suivante nécessite PIKLIST, et ont été désactivés:"
+
+#: piklist/piklist-checker.php:154
+msgid "You can:"
+msgstr "Vous pouvez:"
+
+#: piklist/piklist-checker.php:167
+msgid "Activate Piklist for this site"
+msgstr "Activer piklist pour ce site"
+
+#: piklist/piklist-checker.php:174
+msgid "Network Activate Piklist for all sites."
+msgstr "Activer Piklist pour tous les sites du réseau"
+
+#: piklist/piklist-checker.php:181
+msgid "Install Piklist"
+msgstr "Installer piklist"
+
+#: piklist/piklist-checker.php:188
+#, php-format
+msgid "%1$s %2$sDismiss this message."
+msgstr "%1$s %2$sRejeter ce message."
+
+#: piklist/piklist-checker.php:192
+#, php-format
+msgid "%1$s %2$sChange your theme."
+msgstr "%1$s %2$sChangez votre thème."
+
+#: dist/scripts/jquery.js:3
+msgid "show"
+msgstr "afficher"
+
+#: dist/scripts/jquery.js:3
+msgid "hide"
+msgstr "cacher"
+
+#: dist/scripts/jquery.js:3
+msgid "toggle"
+msgstr "basculer"
+
+#~ msgid ""
+#~ "The page you are looking for might have been removed, had its name "
+#~ "changed, or is temporarily unavailable."
+#~ msgstr ""
+#~ "La page demandée a changé de nom ou est temporairement inaccessible."
+
+#~ msgid "Please try the following:"
+#~ msgstr "Veuillez essayer les actions suivantes :"
+
+#~ msgid "Check your spelling"
+#~ msgstr "Vérifiez votre syntaxe"
+
+#~ msgid "Return to the <a href=\"%s\">home page</a>"
+#~ msgstr "Revenir à la <a href=\"%s\">page d'accueil</a>"
+
+#~ msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
+#~ msgstr ""
+#~ "Cliquer sur le bouton <a href=\"javascript:history.back()\">Retour</a>"
+
+#~ msgid "Theme Activation"
+#~ msgstr "Activation du thème"
+
+#~ msgid "%s Theme Activation"
+#~ msgstr "Activation du thème %s"
+
+#~ msgid "Create static front page?"
+#~ msgstr "Créer une page d'accueil ?"
+
+#~ msgid "Create a page called Home and set it to be the static front page"
+#~ msgstr ""
+#~ "Créer une page \"Home\" et la définir comme page d'accueil statique ?"
+
+#~ msgid "Change permalink structure?"
+#~ msgstr "Modifier la structure des permaliens ?"
+
+#~ msgid "Update permalink structure?"
+#~ msgstr "Mettre à jour la structure des permaliens ?"
+
+#~ msgid "Change permalink structure to /&#37;postname&#37;/"
+#~ msgstr "Changer la structure permaliens en /&#37;postname&#37;/"
+
+#~ msgid "Change uploads folder?"
+#~ msgstr "Changer le dossier d'upload ?"
+
+#~ msgid "Update uploads folder?"
+#~ msgstr "Mettre à jour le dossier d'upload ?"
+
+#~ msgid "Change uploads folder to /assets/ instead of /wp-content/uploads/"
+#~ msgstr ""
+#~ "Changer le dossier d'upload en /assets/ à la place de /wp-content/uploads/"
+
+#~ msgid "Create navigation menu?"
+#~ msgstr "Créer un menu de navigation ?"
+
+#~ msgid "Create the Primary Navigation menu and set the location"
+#~ msgstr "Créer le menus de navigation primaire et définir sa position"
+
+#~ msgid "Add pages to menu?"
+#~ msgstr "Ajouter les pages au menu ?"
+
+#~ msgid "Add all current published pages to the Primary Navigation"
+#~ msgstr ""
+#~ "Ajouter toutes les pages actuellement publiées à la navigation primaire"
+
+#~ msgid "Please make sure your <a href=\"%s\">.htaccess</a> file is writable "
+#~ msgstr ""
+#~ "Veuillez vérifier que votre fichier <a href=\"%s\">.htaccess</a> soit "
+#~ "accessible en écriture"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Archives quotidiennes : %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Archives mensuelles : %s"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Archives annuelles : %s"
+
+#~ msgid "Author Archives: %s"
+#~ msgstr "Archives d'auteurs : %s"
+
+#~ msgid "File Not Found"
+#~ msgstr "Fichier non trouvé"
+
+#~ msgid "Primary Sidebar"
+#~ msgstr "Barre latérale Primaire"
+
+#~ msgid "Use this widget to add a vCard"
+#~ msgstr "Utiliser ce widget pour ajouter une vCard"
+
+#~ msgid "Roots: vCard"
+#~ msgstr "Roots: vCard"
+
+#~ msgid "vCard"
+#~ msgstr "vCard"
+
+#~ msgid "<cite class=\"fn\">%s</cite>"
+#~ msgstr "<cite class=\"fn\">%s</cite>"
+
+#~ msgid "%1$s"
+#~ msgstr "%1$s"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Editer)"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Votre commentaire est en attente de modération."
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "Cet article est protégé par mot de passe. Entrez le mot de passe pour "
+#~ "voir les commentaires."
+
+#~ msgid "One Response to &ldquo;%2$s&rdquo;"
+#~ msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+#~ msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
+#~ msgstr[1] "%1$s résponses à &ldquo;%2$s&rdquo;"
+
+#~ msgid "Leave a Reply"
+#~ msgstr "Répondre"
+
+#~ msgid "Leave a Reply to %s"
+#~ msgstr "Répondre à %s"
+
+#~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+#~ msgstr ""
+#~ "Vous devez être <a href=\"%s\">connecté</a> pour ajouter un commentaire."
+
+#~ msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+#~ msgstr "Connecté en tant que <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#~ msgid "Log out of this account"
+#~ msgstr "Déconnexion de ce compte"
+
+#~ msgid "Log out &raquo;"
+#~ msgstr "Déconnexion &raquo;"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid " (required)"
+#~ msgstr " (obligatoire)"
+
+#~ msgid "Email (will not be published)"
+#~ msgstr "Email (ne sera pas publié)"
+
+#~ msgid "Website"
+#~ msgstr "Site web"
+
+#~ msgid "Comment"
+#~ msgstr "Commentaire"
+
+#~ msgid "Submit Comment"
+#~ msgstr "Ajouter un commentaire"
+
+#~ msgid "&larr; Older posts"
+#~ msgstr "&larr; Articles plus anciens"
+
+#~ msgid "Newer posts &rarr;"
+#~ msgstr "Articles plus récents &rarr;"
+
+#~ msgid "Posted on %s at %s."
+#~ msgstr "Publié le %s à %s."
+
+#~ msgid "Written by"
+#~ msgstr "Rédigé par"
+
+#~ msgid "Title (optional):"
+#~ msgstr "Titre (facultatif) :"
+
+#~ msgid "Street Address:"
+#~ msgstr "Rue :"
+
+#~ msgid "City/Locality:"
+#~ msgstr "Ville/Localité :"
+
+#~ msgid "State/Region:"
+#~ msgstr "État/Région :"
+
+#~ msgid "Zipcode/Postal Code:"
+#~ msgstr "Code Postal :"
+
+#~ msgid "Telephone:"
+#~ msgstr "Téléphone :"
+
+#~ msgid "Email:"
+#~ msgstr "Email :"

@@ -12,7 +12,7 @@ $phone = $agency_options['agency_phone'];
                 <?php if ($logo): ?>
                     <img class="ui image logo" src="<?php echo wp_get_attachment_url($logo);?>" />
                 <?php else: ?>
-                    <img class="logo" src="//placehold.it/250x100" />
+             <img class="logo" src="//placehold.it/250x100" />
                 <?php endif; ?>
             </a>
         </div>

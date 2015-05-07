@@ -4,19 +4,19 @@ namespace Agency\PostType\Product;
 function setup_custom_post() {
 
     $labels = array(
-        'name' => 'Products',
-        'singular_name' => 'Product',
-        'menu_name' => 'Products',
-        'parent_item_colon' => 'Parent Item:',
-        'all_items' => 'All Products',
-        'view_item' => 'View Product',
-        'add_new_item' => 'Add New Product',
-        'add_new' => 'Add New',
-        'edit_item' => 'Edit Product',
-        'update_item' => 'Update Product',
-        'search_items' => 'Search Product',
-        'not_found' => 'Not found',
-        'not_found_in_trash' => 'Not found in Trash',
+        'name' => __('Products', 'sage'),
+        'singular_name' => __('Product', 'sage'),
+        'menu_name' => __('Products', 'sage'),
+        'parent_item_colon' => __('Parent Item:', 'sage'),
+        'all_items' => __('All Products', 'sage'),
+        'view_item' => __('View Product', 'sage'),
+        'add_new_item' => __('Add New Product', 'sage'),
+        'add_new' => __('Add New', 'sage'),
+        'edit_item' => __('Edit Product', 'sage'),
+        'update_item' => __('Update Product', 'sage'),
+        'search_items' => __('Search Product', 'sage'),
+        'not_found' => __('Not found', 'sage'),
+        'not_found_in_trash' => __('Not found in Trash', 'sage'),
     );
 
     $args = array(

@@ -29,7 +29,7 @@ $products = get_posts(array(
         <br>
         <div id="<?php echo $post->post_name ?>" class="ui four column grid stackable dimmable-image">
             <br>
-            <h2><?php _e('Offres','sage'); ?></h2>
+            <h2><?php _e('Offers','sage'); ?></h2>
             <hr>
             <?php foreach ($products as $p): ?>
                 <div class="column">
@@ -38,7 +38,7 @@ $products = get_posts(array(
                         <div class="ui dimmer">
                             <div class="content">
                                 <div class="center">
-                                    <a class="ui inverted button"  href="<?php echo get_permalink( $p->ID ); ?>"><?php _e('En savoir plus','sage'); ?></a>
+                                    <a class="ui inverted button"  href="<?php echo get_permalink( $p->ID ); ?>"><?php _e('More info','sage'); ?></a>
                                 </div>
                             </div>
                         </div>

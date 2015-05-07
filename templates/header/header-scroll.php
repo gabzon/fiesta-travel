@@ -20,29 +20,28 @@ $phone = $agency_options['agency_phone'];
             <div class="ui horizontal list">
                 <div class="item">
                     <div class="content">
-                        <a href="#promotion">Promotions</a>
+                        <a href="#promotion"><?php _e('Promotions','sage'); ?> </a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
-                        <a href="#services">Services</a>
+                        <a href="#services"><?php _e('Services','sage'); ?></a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
-                        <a href="#request">Request a travel</a>
+                        <a href="#request"><?php _e('Request a travel','sage'); ?></a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
-                        <a href="#about">About</a>
+                        <a href="#about"><?php _e('About','sage'); ?></a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
                         <a href="tel:<?php echo $phone ?>">
-                            <i class="call icon"></i>
-                            <?php echo $phone; ?>
+                            <i class="call icon"></i><?php echo $phone; ?>
                         </a>
                     </div>
                 </div>

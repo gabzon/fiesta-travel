@@ -4,19 +4,19 @@ namespace Agency\PostType\Hotel;
 function setup_custom_post() {
 
     $labels = array(
-        'name' => 'Hotels',
-        'singular_name' => 'Hotel',
-        'menu_name' => 'Hotels',
-        'parent_item_colon' => 'Parent Hotel:',
-        'all_items' => 'All Hotels',
-        'view_item' => 'View Hotel',
-        'add_new_item' => 'Add New Hotel',
-        'add_new' => 'Add New',
-        'edit_item' => 'Edit Hotel',
-        'update_item' => 'Update Hotel',
-        'search_items' => 'Search Hotel',
-        'not_found' => 'Not found',
-        'not_found_in_trash' => 'Not found in Trash',
+        'name' => __('Hotels', 'sage'),
+        'singular_name' => __('Hotel', 'sage'),
+        'menu_name' => __('Hotels', 'sage'),
+        'parent_item_colon' => __('Parent Hotel:', 'sage'),
+        'all_items' => __('All Hotels', 'sage'),
+        'view_item' => __('View Hotel', 'sage'),
+        'add_new_item' => __('Add New Hotel', 'sage'),
+        'add_new' => __('Add New', 'sage'),
+        'edit_item' => __('Edit Hotel', 'sage'),
+        'update_item' => __('Update Hotel', 'sage'),
+        'search_items' => __('Search Hotel', 'sage'),
+        'not_found' => __('Not found', 'sage'),
+        'not_found_in_trash' => __('Not found in Trash', 'sage'),
     );
 
     $args = array(

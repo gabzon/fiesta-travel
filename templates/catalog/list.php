@@ -24,7 +24,7 @@ $products = new WP_Query( $args );
                                         <div class="content">
                                             <div class="center">
                                                 <a href="<?php echo get_the_permalink(); ?>" class="ui inverted button">
-                                                    <?php _e('Plus d\'info','sage'); ?>
+                                                    <?php _e('More info','sage'); ?>
                                                 </a>
                                             </div>
                                         </div>

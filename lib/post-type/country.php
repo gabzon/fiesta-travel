@@ -4,19 +4,19 @@ namespace Agency\PostType\Country;
 function setup_custom_post() {
 
     $labels = array(
-        'name' => 'Countries',
-        'singular_name' => 'Country',
-        'menu_name' => 'Countries',
-        'parent_item_colon' => 'Parent Country:',
-        'all_items' => 'All Countries',
-        'view_item' => 'View Country',
-        'add_new_item' => 'Add New Country',
-        'add_new' => 'Add New',
-        'edit_item' => 'Edit Country',
-        'update_item' => 'Update Country',
-        'search_items' => 'Search Country',
-        'not_found' => 'Not found',
-        'not_found_in_trash' => 'Not found in Trash',
+        'name' => __('Countries','sage'),
+        'singular_name' => __('Country','sage'),
+        'menu_name' => __('Countries','sage'),
+        'parent_item_colon' => __('Parent Country:','sage'),
+        'all_items' => __('All Countries','sage'),
+        'view_item' => __('View Country','sage'),
+        'add_new_item' => __('Add New Country','sage'),
+        'add_new' => __('Add New','sage'),
+        'edit_item' => __('Edit Country','sage'),
+        'update_item' => __('Update Country','sage'),
+        'search_items' => __('Search Country','sage'),
+        'not_found' => __('Not found', 'sage'),
+        'not_found_in_trash' => __('Not found in Trash', 'sage'),
     );
 
     $args = array(

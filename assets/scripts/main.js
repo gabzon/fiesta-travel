@@ -74,7 +74,7 @@
                     frompicker.set('max', topicker.get('select'));
                 }
 
-                // When something is selected, update the “from” and “to” limits.
+               
                 frompicker.on('set', function(event) {
                     console.log(event);
                     if ( event.select ) {
