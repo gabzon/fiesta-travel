@@ -34,8 +34,6 @@ function sevinci_sidebar(){
     }
 
     ?>
-
-
     <?php if (Config\display_sidebar() && sevinci_sidebar()) : ?>
         <div class="ui two column grid stackable">
             <div class="twelve wide column">
@@ -55,6 +53,7 @@ function sevinci_sidebar(){
     get_template_part('templates/footer');
     wp_footer();
     ?>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 </div>
 </body>
 </html>

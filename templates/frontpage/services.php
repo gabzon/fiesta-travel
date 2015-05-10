@@ -1,4 +1,4 @@
-<section id="services" class="ui basic segment fullheight">
+<section id="services" class="ui basic segment">
     <div class="segment-content">
         <div class="ui stackable four column page grid">
             <div class="column">
@@ -6,7 +6,7 @@
                     <i class="circular plane icon"></i>
                     <?php _e('Pre-reservation', 'sage'); ?>
                     <div class="sub header">
-                        <?php _e('With fiesta travel you get the opportunity to make reservations without making any down paiments. No more raise of pricing') ?>
+                        <?php _e('With fiesta travel you get the opportunity to make reservations without making any down paiments. No more raise of pricing','sage'); ?>
                     </div>
 
                 </h2>
@@ -16,7 +16,7 @@
                     <i class="circular suitcase icon"></i>
                     <?php _e('Luggage','sage'); ?>
                     <div class="sub header">
-                        <?php _e('Take two luggages instead of one! Fiesta travel have special deal for extra luggage. Next time someone asks you to bring them something, say yes!') ?>
+                        <?php _e('Take two luggages instead of one! Fiesta travel have special deal for extra luggage. Next time someone asks you to bring them something, say yes!','sage'); ?>
                     </div>
                 </h2>
             </div>

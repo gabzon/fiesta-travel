@@ -25,17 +25,17 @@ $phone = $agency_options['agency_phone'];
                 </div>
                 <div class="item">
                     <div class="content">
+                        <a href="#about"><?php _e('About','sage'); ?></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
                         <a href="#services"><?php _e('Services','sage'); ?></a>
                     </div>
                 </div>
                 <div class="item">
                     <div class="content">
                         <a href="#request"><?php _e('Request a travel','sage'); ?></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="content">
-                        <a href="#about"><?php _e('About','sage'); ?></a>
                     </div>
                 </div>
                 <div class="item">

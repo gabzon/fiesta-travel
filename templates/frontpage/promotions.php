@@ -1,7 +1,7 @@
 <?php $query = new WP_Query(array('post_type' => 'product')); ?>
 
-
-<section id="promotion" class="ui basic segment fullheight">
+<section id="promotion" class="ui basic segment">
+    <br>
     <div class="segment-content">
         <div class="ui page grid">
             <div class="column">

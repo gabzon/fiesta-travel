@@ -5,14 +5,14 @@ $logo = $agency_options['agency_logo'];
 $phone = $agency_options['agency_phone'];
 ?>
 
-<header id="menu-scroll" role="banner">
+<header id="menu-scroll" class="menu-product" role="banner">
     <div class="ui stackable page grid">
         <div class="six wide column">
             <a href="<?php bloginfo('url'); ?>" class="home">
                 <?php if ($logo): ?>
                     <img class="ui image logo" src="<?php echo wp_get_attachment_url($logo);?>" />
                 <?php else: ?>
-             <img class="logo" src="//placehold.it/250x100" />
+                    <img class="logo" src="//placehold.it/250x100" />
                 <?php endif; ?>
             </a>
         </div>
@@ -20,7 +20,7 @@ $phone = $agency_options['agency_phone'];
             <div class="ui horizontal list">
                 <div class="item">
                     <div class="content">
-                        <a href="#details">Details</a>
+                        <a href="#gallery">Details</a>
                     </div>
                 </div>
                 <div class="item">
