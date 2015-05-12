@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sevinci Agency\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-05 15:40+0100\n"
+"POT-Creation-Date: 2015-05-12 00:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -51,10 +51,6 @@ msgstr "Paramètres"
 msgid "Save Settings"
 msgstr "Enregistrer les paramètres"
 
-#: lib/extras.php:142
-msgid "New Request"
-msgstr "Nouveau devis"
-
 #: lib/init.php:22
 msgid "Primary Navigation"
 msgstr "Navigation Primaire"
@@ -71,7 +67,7 @@ msgstr "Pied de page"
 msgid "Countries"
 msgstr "Pays"
 
-#: lib/post-type/country.php:8
+#: lib/post-type/country.php:8 templates/product/preview.php:57
 #: piklist/parts/settings/information-settings.php:68
 msgid "Country"
 msgstr "Pays"
@@ -126,7 +122,7 @@ msgstr "Pas trouvé dans la corbeille"
 msgid "Hotels"
 msgstr "Hôtels"
 
-#: lib/post-type/hotel.php:8
+#: lib/post-type/hotel.php:8 templates/components/form.php:221
 msgid "Hotel"
 msgstr "Hotel"
 
@@ -303,7 +299,230 @@ msgstr "Commentaires plus récents &rarr;"
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: templates/content-page.php:2 templates/content-single-product.php:22
+#: templates/components/form.php:5
+msgid "Request"
+msgstr "Devis"
+
+#: templates/components/form.php:12
+msgid "Full name"
+msgstr "Nom complet"
+
+#: templates/components/form.php:19
+#: piklist/parts/settings/information-settings.php:79
+msgid "Email"
+msgstr "Email"
+
+#: templates/components/form.php:25
+#: piklist/parts/settings/information-settings.php:90
+msgid "Phone"
+msgstr "Téléphone"
+
+#: templates/components/form.php:36
+msgid "Destination"
+msgstr "Destination"
+
+#: templates/components/form.php:44
+msgid "Departure date"
+msgstr "Date de départ"
+
+#: templates/components/form.php:49
+msgid "Return date"
+msgstr "Date de retour"
+
+#: templates/components/form.php:62
+msgid "Traveling with"
+msgstr "voyage avec"
+
+#: templates/components/form.php:63
+msgid "Alone"
+msgstr "Seul"
+
+#: templates/components/form.php:64
+msgid "In couple"
+msgstr "En couple"
+
+#: templates/components/form.php:65
+msgid "Family"
+msgstr "Famille"
+
+#: templates/components/form.php:66
+msgid "Friends"
+msgstr "Amis"
+
+#: templates/components/form.php:67
+msgid "Group"
+msgstr "Groupe"
+
+#: templates/components/form.php:68
+msgid "Collegues"
+msgstr "Collègues"
+
+#: templates/components/form.php:75
+msgid "Adults"
+msgstr "Adultes"
+
+#: templates/components/form.php:85 templates/components/form.php:102
+msgid "More"
+msgstr "Plus"
+
+#: templates/components/form.php:92
+msgid "Kids"
+msgstr "Enfants"
+
+#: templates/components/form.php:111
+msgid "Preferences"
+msgstr "Préférences"
+
+#: templates/components/form.php:120 templates/product/details.php:20
+#: piklist/parts/meta-boxes/fields-product.php:126
+msgid "Flights"
+msgstr "Vols"
+
+#: templates/components/form.php:125 templates/product/details.php:16
+#: piklist/parts/meta-boxes/fields-product.php:138
+msgid "Hosting"
+msgstr "Hébergement"
+
+#: templates/components/form.php:130
+msgid "Activities"
+msgstr "Activités"
+
+#: templates/components/form.php:135
+msgid "Transport"
+msgstr "Transport"
+
+#: templates/components/form.php:145
+msgid "Flight options"
+msgstr "Options de vol"
+
+#: templates/components/form.php:151
+msgid "Economy"
+msgstr "Economique"
+
+#: templates/components/form.php:154
+msgid "Business Class"
+msgstr "Business Class"
+
+#: templates/components/form.php:157
+msgid "First Class"
+msgstr "Première class"
+
+#: templates/components/form.php:162
+msgid "Either"
+msgstr "L'un ou l'autre"
+
+#: templates/components/form.php:165
+msgid "Aisle"
+msgstr "Couloir"
+
+#: templates/components/form.php:168
+msgid "Windows"
+msgstr "Fenêtre"
+
+#: templates/components/form.php:173
+msgid "Vegeterian meal"
+msgstr "Menu végétarien"
+
+#: templates/components/form.php:178
+msgid "Special assistance"
+msgstr "Assistance spéciale"
+
+#: templates/components/form.php:189
+msgid "Hosting options"
+msgstr "Options d'hébergement"
+
+#: templates/components/form.php:193
+#: piklist/parts/meta-boxes/fields-hotel.php:85
+msgid "Internet"
+msgstr "Internet"
+
+#: templates/components/form.php:196
+msgid "Breakfast"
+msgstr "petit déjeuner"
+
+#: templates/components/form.php:199
+#: piklist/parts/meta-boxes/fields-hotel.php:84
+msgid "Parking"
+msgstr "Parking"
+
+#: templates/components/form.php:202
+#: piklist/parts/meta-boxes/fields-hotel.php:86
+msgid "Swiming Pool"
+msgstr "Piscine"
+
+#: templates/components/form.php:207
+msgid "Laundry Room"
+msgstr "Buanderie"
+
+#: templates/components/form.php:210
+msgid "Gym/Fitness"
+msgstr "Fitness"
+
+#: templates/components/form.php:213
+msgid "Space Well-being"
+msgstr "Space bienêtre"
+
+#: templates/components/form.php:216
+msgid "Conference room"
+msgstr "Salle de conference"
+
+#: templates/components/form.php:224
+msgid "House/Appartment"
+msgstr "Maison/apartement"
+
+#: templates/components/form.php:227
+msgid "Homestay"
+msgstr "Chez l'habitant"
+
+#: templates/components/form.php:230
+msgid "Camping"
+msgstr "Camping"
+
+#: templates/components/form.php:253
+msgid "Theme & activities options"
+msgstr "Option des thèmes et activités"
+
+#: templates/components/form.php:257
+msgid "Culture & History"
+msgstr "Culture et Histoire"
+
+#: templates/components/form.php:260
+msgid "Business"
+msgstr "Business"
+
+#: templates/components/form.php:265 templates/components/form.php:276
+msgid "Fun & Entertainment"
+msgstr "Divertissements"
+
+#: templates/components/form.php:268
+msgid "Romance"
+msgstr "Romantique"
+
+#: templates/components/form.php:273
+msgid "Adventure"
+msgstr "Aventure"
+
+#: templates/components/form.php:281
+msgid "Relaxation"
+msgstr "Détente"
+
+#: templates/components/form.php:284
+msgid "Discovery & Leisure"
+msgstr "Découverte et Loisirs"
+
+#: templates/components/form.php:296
+msgid "Request a quote"
+msgstr "Demande de devis"
+
+#: templates/components/form.php:301
+msgid "Thanks"
+msgstr "Merci"
+
+#: templates/components/form.php:303
+msgid "We'll contact you shortly"
+msgstr "Nous vous contacterons prochainement"
+
+#: templates/content-page.php:2 templates/content-single-product.php:37
 #: templates/content-single.php:11
 msgid "Pages:"
 msgstr "Pages :"
@@ -316,103 +535,23 @@ msgstr "Offres"
 msgid "By"
 msgstr "Par"
 
-#: templates/frontpage/about.php:5
-msgid "about"
-msgstr "à propos"
-
-#: templates/frontpage/form.php:5
-msgid "Request"
-msgstr "Devis"
-
-#: templates/frontpage/form.php:10
-msgid "Destination"
-msgstr "Destination"
-
-#: templates/frontpage/form.php:15
-msgid "Departure date"
-msgstr "Date de départ"
-
-#: templates/frontpage/form.php:20
-msgid "Return date"
-msgstr "Date de retour"
-
-#: templates/frontpage/form.php:30
-msgid "Adults"
-msgstr "Adultes"
-
-#: templates/frontpage/form.php:40 templates/frontpage/form.php:57
-msgid "More"
-msgstr "Plus"
-
-#: templates/frontpage/form.php:47
-msgid "Kids"
-msgstr "Enfants"
-
-#: templates/frontpage/form.php:67
-msgid "Romance"
-msgstr "Romantique"
-
-#: templates/frontpage/form.php:73
-msgid "Family"
-msgstr "Famille"
-
-#: templates/frontpage/form.php:79
-msgid "Friends"
-msgstr "Amis"
-
-#: templates/frontpage/form.php:85
-msgid "Group"
-msgstr "Groupe"
-
-#: templates/frontpage/form.php:93
-msgid "Relaxation"
-msgstr "Détente"
-
-#: templates/frontpage/form.php:99
-msgid "Discovery & Leisure"
-msgstr "Découverte et Loisirs"
-
-#: templates/frontpage/form.php:105
-msgid "Culture & History"
-msgstr "Culture et Histoire"
-
-#: templates/frontpage/form.php:111
-msgid "Business"
-msgstr "Business"
-
-#: templates/frontpage/form.php:117
-msgid "Adventure"
-msgstr "Aventure"
-
-#: templates/frontpage/form.php:123
-msgid "Fun & Entertainment"
-msgstr "Divertissements"
-
-#: templates/frontpage/form.php:131
-msgid "Preferences"
-msgstr "Préférences"
-
-#: templates/frontpage/form.php:137
-msgid "Send"
-msgstr "Envoyer"
-
-#: templates/frontpage/form.php:142
-msgid "Thanks"
-msgstr "Merci"
-
-#: templates/frontpage/form.php:144
-msgid "We'll contact you shortly"
-msgstr "Nous vous contacterons prochainement"
+#: templates/frontpage/about.php:6 templates/header/header-scroll.php:28
+msgid "About"
+msgstr "A propos"
 
 #: templates/frontpage/landing.php:7
-msgid "The best prices"
-msgstr "Les meilleurs prix"
+msgid "The best prices in "
+msgstr "Les meilleurs prix en"
 
-#: templates/frontpage/landing.php:11
+#: templates/frontpage/landing.php:7
+msgid "June"
+msgstr "juin"
+
+#: templates/frontpage/landing.php:38
 msgid "Travel with 2 luggages"
 msgstr "Voyagez avec 2 bagages"
 
-#: templates/frontpage/landing.php:13
+#: templates/frontpage/landing.php:40
 msgid "According to the flights"
 msgstr "Offre valable selon certain conditions"
 
@@ -477,73 +616,77 @@ msgstr ""
 msgid "Promotions"
 msgstr "Promotions"
 
-#: templates/header/header-scroll.php:28
+#: templates/header/header-scroll.php:33
 #: piklist/parts/meta-boxes/fields-hotel.php:81
 msgid "Services"
 msgstr "Services"
 
-#: templates/header/header-scroll.php:33
+#: templates/header/header-scroll.php:38
 msgid "Request a travel"
 msgstr "Demande de devis"
 
-#: templates/header/header-scroll.php:38
-msgid "About"
-msgstr "A propos"
-
-#: templates/product/details.php:15
-msgid "Details"
-msgstr "Détails"
-
-#: templates/product/details.php:29
-#: piklist/parts/meta-boxes/fields-product.php:169
-msgid "Days"
-msgstr "Jours"
-
-#: templates/product/details.php:31
-#: piklist/parts/meta-boxes/fields-product.php:182
-msgid "Nights"
-msgstr "Nuits"
-
-#: templates/product/details.php:51
-msgid "Order"
-msgstr "Ordre"
-
-#: templates/product/tabs.php:11
+#: templates/product/details.php:12
 msgid "Itinerary"
 msgstr "Itinéraire"
 
-#: templates/product/tabs.php:14
-#: piklist/parts/meta-boxes/fields-product.php:138
-msgid "Hosting"
-msgstr "Hébergement"
-
-#: templates/product/tabs.php:18
-#: piklist/parts/meta-boxes/fields-product.php:126
-msgid "Flights"
-msgstr "Vols"
-
-#: templates/product/tabs.php:22
+#: templates/product/details.php:24
 msgid "Additional info"
 msgstr "Information additionnelle"
 
-#: templates/product/tabs.php:26
-msgid "Payment"
-msgstr "Paiement"
+#: templates/product/details.php:28
+msgid "Payment methods"
+msgstr "Mode de paiement"
 
-#: templates/product/tabs.php:48
+#: templates/product/details.php:59
 #: piklist/parts/meta-boxes/fields-product.php:66
 msgid "Included"
 msgstr "Compris"
 
-#: templates/product/tabs.php:53
+#: templates/product/details.php:65
 #: piklist/parts/meta-boxes/fields-product.php:78
 msgid "Not Included"
 msgstr "Pas compris"
 
-#: templates/product/tabs.php:64
+#: templates/product/details.php:79
 #: piklist/parts/meta-boxes/fields-product.php:90
 msgid "Cancelation"
 msgstr "Annulation"
+
+#: templates/product/preview.php:30
+msgid "Details"
+msgstr "Détails"
+
+#: templates/product/preview.php:36
+msgid "Photos"
+msgstr "Photos"
+
+#: templates/product/preview.php:45
+#: piklist/parts/meta-boxes/fields-product.php:13
+#: piklist/parts/meta-boxes/fields-product.php:40
+msgid "Price"
+msgstr "Prix"
+
+#: templates/product/preview.php:49
+msgid "Duration"
+msgstr "Durée"
+
+#: templates/product/preview.php:51
+#: piklist/parts/meta-boxes/fields-product.php:169
+msgid "Days"
+msgstr "Jours"
+
+#: templates/product/preview.php:53
+#: piklist/parts/meta-boxes/fields-product.php:182
+msgid "Nights"
+msgstr "Nuits"
+
+#: templates/product/preview.php:61
+msgid "Location"
+msgstr "Emplacement"
+
+#: templates/product/preview.php:72
+msgid "Customize"
+msgstr "Personnaliser"
 
 #: templates/searchform.php:2
 msgid "Search for:"
@@ -668,26 +811,9 @@ msgstr "Numéro de chambres"
 msgid "Enter the number of rooms"
 msgstr "Entrez le nombre de chambres"
 
-#: piklist/parts/meta-boxes/fields-hotel.php:84
-msgid "Parking"
-msgstr "Parking"
-
-#: piklist/parts/meta-boxes/fields-hotel.php:85
-msgid "Internet"
-msgstr "Internet"
-
-#: piklist/parts/meta-boxes/fields-hotel.php:86
-msgid "Swiming Pool"
-msgstr "Piscine"
-
 #: piklist/parts/meta-boxes/fields-hotel.php:87
 msgid "TV"
 msgstr "TV"
-
-#: piklist/parts/meta-boxes/fields-product.php:13
-#: piklist/parts/meta-boxes/fields-product.php:40
-msgid "Price"
-msgstr "Prix"
 
 #: piklist/parts/meta-boxes/fields-product.php:16
 #: piklist/parts/meta-boxes/fields-product.php:45
@@ -769,17 +895,9 @@ msgstr "Entrez la ville de l'agence"
 msgid "Enter the agency country"
 msgstr "Entrez le pays de l'agence"
 
-#: piklist/parts/settings/information-settings.php:79
-msgid "Email"
-msgstr "Email"
-
 #: piklist/parts/settings/information-settings.php:82
 msgid "Enter the agency email"
 msgstr "Entrez l'email de l'agence"
-
-#: piklist/parts/settings/information-settings.php:90
-msgid "Phone"
-msgstr "Téléphone"
 
 #: piklist/parts/settings/information-settings.php:93
 msgid "Enter the agency phone"
@@ -801,11 +919,15 @@ msgstr "Calendrier"
 msgid "Enter the agency schedule"
 msgstr "Entrez le calendrier de l'agence"
 
-#: piklist/parts/settings/information-settings.php:129
+#: piklist/parts/settings/information-settings.php:126
+msgid "Agency Map"
+msgstr "Plan de l'agence"
+
+#: piklist/parts/settings/information-settings.php:137
 msgid "Yes"
 msgstr "Oui"
 
-#: piklist/parts/settings/information-settings.php:130
+#: piklist/parts/settings/information-settings.php:138
 msgid "No"
 msgstr "Non"
 
@@ -958,6 +1080,10 @@ msgstr "%1$s %2$sRejeter ce message."
 msgid "%1$s %2$sChange your theme."
 msgstr "%1$s %2$sChangez votre thème."
 
+#: bower_components/jquery-ui/jquery-ui.min.js:8
+msgid "'"
+msgstr "'"
+
 #: dist/scripts/jquery.js:3
 msgid "show"
 msgstr "afficher"
@@ -969,6 +1095,51 @@ msgstr "cacher"
 #: dist/scripts/jquery.js:3
 msgid "toggle"
 msgstr "basculer"
+
+#: dist/scripts/main.js:16
+msgid "d"
+msgstr "d"
+
+#: dist/scripts/main.js:16
+msgid "o"
+msgstr "o"
+
+#: dist/scripts/main.js:16
+msgid "m"
+msgstr "m"
+
+#: dist/scripts/main.js:16
+msgid "y"
+msgstr "y"
+
+#: dist/scripts/main.js:16
+msgid "@"
+msgstr "@"
+
+#: dist/scripts/main.js:16
+msgid "!"
+msgstr "!"
+
+#~ msgid "Aile"
+#~ msgstr "Couloir"
+
+#~ msgid "Order"
+#~ msgstr "Ordre"
+
+#~ msgid "New Request"
+#~ msgstr "Nouveau devis"
+
+#~ msgid "about"
+#~ msgstr "à propos"
+
+#~ msgid "Send"
+#~ msgstr "Envoyer"
+
+#~ msgid "The best prices"
+#~ msgstr "Les meilleurs prix"
+
+#~ msgid "Payment"
+#~ msgstr "Paiement"
 
 #~ msgid ""
 #~ "The page you are looking for might have been removed, had its name "

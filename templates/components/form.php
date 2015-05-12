@@ -3,7 +3,7 @@
         <div class="ui page grid">
             <div class="column">
                 <h2 class="ui center aligned header uppercase segment-content"><?php _e('Request','sage'); ?></h2>
-                <form class="ui form" ng-app>
+                <form class="ui form" type="post" action="" id="quote-form" ng-app>
 
                     <!-- Contact information -->
                     <div class="ui three column grid stackable">
@@ -52,45 +52,25 @@
                         </div>
                     </div>
 
-                    <div class="ui six column grid stackable">
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="alone" type="radio" ng-model="alone">&nbsp;&nbsp;<?php _e('Alone','sage'); ?>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="in-couple" type="radio" ng-model="alone">&nbsp;&nbsp;<?php _e('In couple','sage'); ?>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="family" type="radio" ng-model="companion">&nbsp;&nbsp;<?php _e('Family','sage'); ?>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="group" type="radio" ng-model="companion">&nbsp;&nbsp;<?php _e('Group','sage'); ?>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="colleague" type="radio" ng-model="companion">&nbsp;&nbsp;<?php _e('Work Colleagues','sage'); ?>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="ui basic fluid large label colorless">
-                                <input name="traveling-with" value="friends" type="radio" ng-model="companion">&nbsp;&nbsp;<?php _e('Friends','sage'); ?>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ui three column grid stackable">
+                    <div class="ui four column grid stackable">
                         <div class="column">
                             <div id="price-slider"></div>
                         </div>
                         <div class="column">
-                            <div class="ui fluid input field" ng-show="companion" ng-hide="alone">
+                            <div class="ui fluid input field">
+                                <select name="companion" id="companion" class="ui dropdown">
+                                    <option value=""><?php _e('Traveling with','sage'); ?></option>
+                                    <option value="alone"><?php _e('Alone','sage'); ?></option>
+                                    <option value="couple"><?php _e('In couple','sage'); ?></option>
+                                    <option value="family"><?php _e('Family','sage'); ?></option>
+                                    <option value="friends"><?php _e('Friends','sage'); ?></option>
+                                    <option value="group"><?php _e('Group','sage'); ?></option>
+                                    <option value="colleagues"><?php _e('Collegues','sage'); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui fluid input field">
                                 <select name="adults" id="adults" class="ui dropdown">
                                     <option value=""><?php _e('Adults','sage'); ?></option>
                                     <option value="0">0</option>
@@ -107,7 +87,7 @@
                             </div>
                         </div>
                         <div class="column">
-                            <div class="ui fluid input field" ng-show="companion" ng-hide="alone">
+                            <div class="ui fluid input field" ng-hide="companion">
                                 <select name="kids" id="kids" class="ui dropdown">
                                     <option value=""><?php _e('Kids','sage'); ?></option>
                                     <option value="0">0</option>
@@ -182,7 +162,7 @@
                                     <input name="seat" type="radio" value="either"/> &nbsp;&nbsp;<?php _e('Either','sage'); ?>
                                 </div>
                                 <div class="ui basic fluid large label colorless">
-                                    <input name="seat" type="radio" value="Aile"/> &nbsp;&nbsp;<?php _e('Aile','sage'); ?>
+                                    <input name="seat" type="radio" value="aisle"/> &nbsp;&nbsp;<?php _e('Aisle','sage'); ?>
                                 </div>
                                 <div class="ui basic fluid large label colorless">
                                     <input name="seat" type="radio" value="windows"/> &nbsp;&nbsp;<?php _e('Windows','sage'); ?>

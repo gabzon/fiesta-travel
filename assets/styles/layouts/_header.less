@@ -17,8 +17,8 @@ section#header-menu{
 }
 
 header#menu-scroll{
-    //position: relative;
-
+    position: absolute;
+    z-index: 9999;
     width: 100%;
     text-align: center;
     font-size: 60px;
@@ -26,10 +26,10 @@ header#menu-scroll{
     height: auto;
     background: transparent;
     color: #fff;
-    //margin-bottom: 15px;
     z-index: 999999;
     transition: all 0.4s ease;
-    a:hover {color:white !important;}
+    a{text-transform: uppercase; font-weight:bold; color: white !important;}
+    a:hover {color:@ft-primary-dark !important;}
 
     .home{
         display: block;
@@ -66,12 +66,13 @@ header#menu-scroll.stick {
     line-height: 48px;
     height: auto;
     background: white;
-    border-bottom: 1px solid grey;
+    //border-bottom: 1px solid grey;
     text-align: left;
     padding-left: 20px;
     z-index: 999999;
     transition: all 0.4s ease;
-    a:hover {color:deepskyblue !important;}
+    a{color: @ft-primary-dark !important;}
+    a:hover {color:@ft-primary-light !important;}
     .logo{
         width: 45%;
         max-width: 100px;

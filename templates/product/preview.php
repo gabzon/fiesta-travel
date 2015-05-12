@@ -1,28 +1,42 @@
 <?php
 $location_list = wp_get_post_terms(get_the_ID(), 'location', array("fields" => "names"));
 $theme_list = wp_get_post_terms(get_the_ID(), 'theme', array("fields" => "names"));
+$country_list = wp_get_post_terms(get_the_ID(), 'place', array("fields" => "names"));
+
+$product_hosting = get_post_meta(get_the_ID(), 'product_hosting', true);
+$product_flights = get_post_meta(get_the_ID(), 'product_flights', true);
+$product_included = get_post_meta(get_the_ID(), 'product_included', true);
+$product_not_included = get_post_meta(get_the_ID(), 'product_not_included', true);
+$product_cancelation = get_post_meta(get_the_ID(), 'product_cancelation', true);
+$product_payment = get_post_meta(get_the_ID(), 'product_payment', true);
+$gallery = get_post_meta(get_the_ID(), 'product_gallery', false);
 ?>
 <div id="preview">
     <br><br>
-
-    <header>
-        <h1 class="ui header inverted white"><?php the_title(); ?></h1>
-    </header>
     <br>
     <div class="ui two column grid">
         <div class="eleven wide column">
-            <span class="ui header inverted white">
-                <?php the_excerpt(); ?>
-            </span>
+            <header>
+                <h1 class="ui header inverted white">
+                    <?php the_title(); ?>
+                    <div class="sub header">
+                        <?php the_excerpt(); ?>
+                    </div>
+                </h1>
+            </header>
             <br>
-            <a href="#details" class="ui basic inverted white button">
-                <?php _e('Details','sage'); ?>&nbsp;
-                <i class="file text icon"></i>
-            </a>
-            <a href="#gallery" class="ui basic inverted white button">
-                <?php _e('Photos','sage'); ?>&nbsp;
-                <i class="camera icon"></i>
-            </a>
+            <?php if ( ($post->post_content == "") || $product_hosting || $product_flights || $product_included || $product_not_included || $product_cancelation || $product_payment ): ?>
+                <a href="#details" class="ui basic inverted white button">
+                    <?php _e('Details','sage'); ?>&nbsp;
+                    <i class="file text icon"></i>
+                </a>
+            <?php endif; ?>
+            <?php if ($gallery): ?>
+                <a href="#gallery" class="ui basic inverted white button">
+                    <?php _e('Photos','sage'); ?>&nbsp;
+                    <i class="camera icon"></i>
+                </a>
+            <?php endif; ?>
         </div>
         <div class="five wide column">
             <table class="ui table">
@@ -45,7 +59,7 @@ $theme_list = wp_get_post_terms(get_the_ID(), 'theme', array("fields" => "names"
                     </tr>
                     <tr>
                         <td><i class="map marker icon"></i><strong><?php _e('Location','sage'); ?></strong></td>
-                        <td><?php echo join(', ', $location_list); ?></td>
+                        <td><?php echo join(', ', $country_list); ?></td>
                     </tr>
                     <tr>
                         <td><i class="flag icon"></i><strong>Theme</strong></td>
@@ -55,7 +69,7 @@ $theme_list = wp_get_post_terms(get_the_ID(), 'theme', array("fields" => "names"
                         <th colspan="2">
                             <button class="fluid ui blue button">
                                 <i class="shop icon"></i>
-                                <?php _e('Order','sage'); ?>
+                                <?php _e('Customize','sage'); ?>
                             </button>
                         </th>
                     </tr>

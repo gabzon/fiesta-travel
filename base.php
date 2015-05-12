@@ -54,6 +54,16 @@ function sevinci_sidebar(){
     wp_footer();
     ?>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script>
+    var $buoop = {c:2};
+    function $buo_f(){
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.js";
+        document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
 </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
             <div class="ui one column grid stackable">
                 <div class="column center aligned">
                     <h1 class="massive-header">
-                        <?php _e('The best prices in ','sage'); _e('June','sage')?>
+                        <?php _e('The best prices in ','sage'); echo " "; _e('June','sage'); ?>
                     </h1>
                     <br>
                     <div id="landing-destinations" class="">

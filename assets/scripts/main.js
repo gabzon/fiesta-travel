@@ -41,7 +41,7 @@
                     paginationSpeed: 400,
                     singleItem: true,
                     autoHeight: true,
-                    transitionStyle: "fade"                    
+                    transitionStyle: "fade"
                 });
 
                 $("#promotions-crousel").owlCarousel({
@@ -173,7 +173,7 @@
                     });
                 });
 
-                $('.tabular.menu .item').tab();
+                $('.secondary.menu .item').tab();
 
                 $('.message .close').on('click', function () {
                     $(this).closest('.message').fadeOut();
@@ -287,7 +287,7 @@
             },
             'single-product': {
                 init: function () {
-                    alert('hello');
+
                 }
             }
         };

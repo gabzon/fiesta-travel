@@ -4,7 +4,7 @@
     right: 0;
     bottom: -18px;
     left: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .2);
     transition: all 0.3s ease;
 }
 
@@ -13,9 +13,20 @@
     .ui.table{
         background: rgba(25, 25, 25, 0.3);
         tbody td{color: white;}
+        td:first-child{
+            width:35%;
+        }
+    }
+    header h1.ui.header, header h1 .sub.header p{
+        font-weight:700;
     }
 }
 
+#details{
+    padding-bottom: 10%;
+}
+
 #gallery{
+    background-color: white;
     padding-top:50px;
 }

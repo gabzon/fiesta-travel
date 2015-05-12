@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
     <?php
-        $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
     ?>
     <article <?php post_class(); ?>>
         <div class="fullheight" style="background: url('<?php echo $url; ?>') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div id="details">
+        <div id="details" class="ui basic segment">
             <div class="ui page grid">
                 <div class="column">
                     <br>
@@ -30,11 +30,7 @@
         </div>
 
         <div class="form">
-            <div class="ui page grid">
-                <div class="column">
-                    <?php get_template_part('templates/components/form'); ?>
-                </div>
-            </div>
+            <?php get_template_part('templates/components/form'); ?>
         </div>
 
         <footer>
