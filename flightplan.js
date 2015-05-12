@@ -13,7 +13,6 @@ plan.target('production', [
 
 // run commands on localhost
 plan.local(function(local) {
-
   local.log('Copy files to remote hosts');
   var filesToCopy = local.exec('git ls-files', {silent: true});
   // rsync files to all the target's remote hosts
