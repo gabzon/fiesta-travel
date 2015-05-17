@@ -22,7 +22,8 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/post-type',                 // Custom Post Types
   'lib/taxonomy',                  // Custom Taxonomies
-  'lib/wp-defaults.php'            // Wordpress Defaults
+  'lib/wp-defaults.php',           // Wordpress Defaults
+  //'lib/request-form.php',           // Request form
 ];
 
 foreach ($sage_includes as $file) {

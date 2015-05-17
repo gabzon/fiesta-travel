@@ -1,4 +1,7 @@
-<?php $user_query = new WP_User_Query(array('role' => 'editor')); ?>
+<?php
+$user_query = new WP_User_Query(array('role' => 'editor'));
+$agency_options = get_option('agency_settings');
+?>
 
 <?php if ( !empty( $user_query->results ) ) : ?>
     <div class="ui stackable two column grid">
@@ -71,9 +74,10 @@
             </div>
         <?php endforeach; ?>
         <div class="column">
-            <p>
-                <?php echo get_user_meta($user->ID, 'description', true); ?>
-            </p>
+            <?php $agency_description = $agency_options['agency_description']; ?>
+            <?php if ($agency_description): ?>
+                <?php echo $agency_description; ?>
+            <?php endif; ?>
         </div>
     </div>
 <?php endif; ?>

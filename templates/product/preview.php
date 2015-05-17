@@ -14,7 +14,7 @@ $gallery = get_post_meta(get_the_ID(), 'product_gallery', false);
 <div id="preview">
     <br><br>
     <br>
-    <div class="ui two column grid">
+    <div class="ui two column grid stackable">
         <div class="eleven wide column">
             <header>
                 <h1 class="ui header inverted white">
@@ -67,10 +67,10 @@ $gallery = get_post_meta(get_the_ID(), 'product_gallery', false);
                     </tr>
                     <tr>
                         <th colspan="2">
-                            <button class="fluid ui blue button">
+                            <a href="#product-form" class="fluid ui blue button">
                                 <i class="shop icon"></i>
                                 <?php _e('Customize','sage'); ?>
-                            </button>
+                            </a>
                         </th>
                     </tr>
                 </tbody>

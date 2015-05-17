@@ -47,8 +47,18 @@ $phone = $agency_options['agency_phone'];
                 </div>
             </div>
         </div>
-        <div class="ten wide column tablet mobile only right aligned menu-toggle">
-            <i id="sidebar-toggle" class="big bars icon"></i>
+        <div class="sixteen wide column tablet mobile only center aligned menu-toggle">
+            <div class="three basic fluid ui buttons">
+                <a href="tel:<?php echo $phone ?>" class="ui basic button">
+                    <?php _e('Phone','sage'); ?>
+                </a>
+                <a href="#agency-map"  class="ui basic button">
+                    <i class="marker icon"></i> <?php _e('Map','sage'); ?>
+                </a>
+                <a id="sidebar-toggle" class="ui basic button">
+                    <i class="big bars icon"></i> <?php _e('Menu','sage'); ?>
+                </a>
+            </div>
         </div>
     </div>
 </header>

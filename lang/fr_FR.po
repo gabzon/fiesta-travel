@@ -682,7 +682,7 @@ msgstr "Nuits"
 
 #: templates/product/preview.php:61
 msgid "Location"
-msgstr "Emplacement"
+msgstr "Lieu"
 
 #: templates/product/preview.php:72
 msgid "Customize"

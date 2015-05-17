@@ -3,7 +3,7 @@ $agency_options = get_option('agency_settings');
 $logo = $agency_options['agency_logo'];
 ?>
 
-<div id="main-footer" class="ui basic segment">
+<div id="main-footer" class="ui basic inverted black segment">
 
     <div class="ui page grid">
         <div class="column">
@@ -22,7 +22,7 @@ $logo = $agency_options['agency_logo'];
                             <i class="top aligned home icon"></i>
                             <div class="content">
                                 <?php echo $agency_options['agency_address']; ?><br/>
-                                <?php echo $agency_options['agency_postal_code']; ?>, <?php echo $agency_options['agency_city']; ?><br/>
+                                <?php echo $agency_options['agency_postal_code']; ?> <?php echo $agency_options['agency_city']; ?><br/>
                                 <?php echo $agency_options['agency_country']; ?><br/>
                             </div>
                         </div>

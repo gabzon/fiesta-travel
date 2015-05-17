@@ -28,7 +28,7 @@ header#menu-scroll{
     color: #fff;
     z-index: 999999;
     transition: all 0.4s ease;
-    a{text-transform: uppercase; font-weight:bold; color: white !important;}
+    a{text-transform: uppercase; font-weight:bold; color: @ft-primary !important;}
     a:hover {color:@ft-primary-dark !important;}
 
     .home{
@@ -71,8 +71,7 @@ header#menu-scroll.stick {
     padding-left: 20px;
     z-index: 999999;
     transition: all 0.4s ease;
-    a{color: @ft-primary-dark !important;}
-    a:hover {color:@ft-primary-light !important;}
+    a:hover {color:@ft-primary-dark !important;}
     .logo{
         width: 45%;
         max-width: 100px;
@@ -91,16 +90,17 @@ header#menu-scroll.stick {
 
 @media only screen and (max-width: 767px){
     header#menu-scroll{
+        background: @ft-primary-dark;
         overflow: visible;
-        height: auto;
-
+        height: auto;        
         .logo{
             display: block;
-            margin: 10px auto;
+            margin: 0 auto;
+            width: 30%;
+            max-width: 140px;
         }
-
         .menu-toggle{
-            line-height: 3em;
+            line-height: 2em;
         }
     }
 
@@ -109,7 +109,7 @@ header#menu-scroll.stick {
         font-size: 1em;
         line-height: 48px;
         height: auto;
-        background: #efc47D;
+        background: @ft-primary-dark;
         text-align: left;
         padding-left: 20px;
         z-index: 999999;
@@ -117,8 +117,8 @@ header#menu-scroll.stick {
 
         .logo{
             display: block;
-            width: 45%;
-            max-width: 180px;
+            width: 30%;
+            max-width: 140px;
             margin: 10px auto;
         }
     }

@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="form">
+        <div id="product-form" class="form">
             <?php get_template_part('templates/components/form'); ?>
         </div>
 

@@ -179,9 +179,10 @@
                     $(this).closest('.message').fadeOut();
                 });
 
-            },
-            finalize: function () {
 
+            },
+
+            finalize: function () {
 
                 // JavaScript to be fired on all pages, after page specific JS is fired
             }
@@ -189,140 +190,77 @@
         // Home page
         'home': {
             init: function () {
-                validationRules =
-                {
-                    destination: {
-                        identifier: 'destination',
-                        rules: [
-                            {
-                                type: 'empty',
-                                prompt: 'Please enter your destination'
-                            }
-                        ]
-                    },
-                    departure: {
-                        identifier: 'departure',
-                        rules: [
-                            {
-                                type: 'empty',
-                                prompt: 'Please enter the departure date'
-                            }
-                        ]
-                    },
-                    return: {
-                        identifier: 'return',
-                        rules: [
-                            {
-                                type: 'empty',
-                                prompt: 'Please enter the return date'
-                            }
-                        ]
-                    },
-                    adults: {
-                        identifier: 'adults',
-                        rules: [
-                            {
-                                type: 'empty',
-                                prompt: 'Please enter the number of adults'
-                            }
-                        ]
-                    },
-                    kids: {
-                        identifier: 'kids',
-                        rules: [
-                            {
-                                type: 'empty',
-                                prompt: 'Please enter the number of kids'
-                            }
-                        ]
-                    },
-                    travel: {
-                        identifier: 'travel',
-                        rules: [
-                            {
-                                type: 'checked',
-                                prompt: 'Please select at least one type of travel'
-                            }
-                        ]
-                    }
-                };
-
-                $('.ui.form')
-                .form(validationRules,
-                    {
-                        onSuccess: function () {
-                            var form = $('.ui.form');
-                            var submitButton = $('#request-submit');
-                            allFields = form.form('get values');
-                            submitButton.addClass('loading');
-                            $.ajax({
-                                method: "POST",
-                                url: sage_vars.ajaxurl,
-                                data: allFields
-                            })
-                            .done(function (msg) {
-                                submitButton.removeClass('loading');
-                                $('.positive-request').removeClass('hidden');
-                                form.form('clear');
-                            });
-                            return false;
+                
+                function ajaxSubmit(){
+                    var newRequest = $(this).serialize();
+                    $.ajax({
+                        type:"POST",
+                        url: sage_vars.ajaxurl,
+                        data: newRequest,
+                        success:function(data){
+                            alert('succes');
+                            $("#feedback").html(data);
                         }
                     });
 
-                },
-                finalize: function () {
-                    // JavaScript to be fired on the home page, after the init JS
+                    return false;
                 }
+                $('#newRequest').submit(ajaxSubmit);
             },
-            // About us page, note the change from about-us to about_us.
-            'about_us': {
-                init: function () {
-                    // JavaScript to be fired on the about us page
-                }
-            },
-            'catalog': {
-                init: function () {
-                    $('.dimmable-image .image').dimmer({ on: 'hover' });
-                }
-            },
-            'single-product': {
-                init: function () {
 
-                }
+            finalize: function () {
+                  // JavaScript to be fired on the home page, after the init JS
             }
-        };
-
-        // The routing fires all common scripts, followed by the page specific scripts.
-        // Add additional events for more control over timing e.g. a finalize event
-        var UTIL = {
-            fire: function (func, funcname, args) {
-                var fire;
-                var namespace = Sage;
-                funcname = (funcname === undefined) ? 'init' : funcname;
-                fire = func !== '';
-                fire = fire && namespace[func];
-                fire = fire && typeof namespace[func][funcname] === 'function';
-
-                if (fire) {
-                    namespace[func][funcname](args);
-                }
-            },
-            loadEvents: function () {
-                // Fire common init JS
-                UTIL.fire('common');
-
-                // Fire page-specific init JS, and then finalize JS
-                $.each(document.body.className.replace(/-/g, '_').split(/\s+/), function (i, classnm) {
-                    UTIL.fire(classnm);
-                    UTIL.fire(classnm, 'finalize');
-                });
-
-                // Fire common finalize JS
-                UTIL.fire('common', 'finalize');
+        },
+        // About us page, note the change from about-us to about_us.
+        'about_us': {
+            init: function () {
+                // JavaScript to be fired on the about us page
             }
-        };
+        },
+        'catalog': {
+            init: function () {
+                $('.dimmable-image .image').dimmer({ on: 'hover' });
+            }
+        },
+        'single-product': {
+            init: function () {
 
-        // Load Events
-        $(document).ready(UTIL.loadEvents);
+            }
+        }
+    };
 
-    })(jQuery); // Fully reference jQuery after this point.
+    // The routing fires all common scripts, followed by the page specific scripts.
+    // Add additional events for more control over timing e.g. a finalize event
+    var UTIL = {
+        fire: function (func, funcname, args) {
+            var fire;
+            var namespace = Sage;
+            funcname = (funcname === undefined) ? 'init' : funcname;
+            fire = func !== '';
+            fire = fire && namespace[func];
+            fire = fire && typeof namespace[func][funcname] === 'function';
+
+            if (fire) {
+                namespace[func][funcname](args);
+            }
+        },
+        loadEvents: function () {
+            // Fire common init JS
+            UTIL.fire('common');
+
+            // Fire page-specific init JS, and then finalize JS
+            $.each(document.body.className.replace(/-/g, '_').split(/\s+/), function (i, classnm) {
+                UTIL.fire(classnm);
+                UTIL.fire(classnm, 'finalize');
+            });
+
+            // Fire common finalize JS
+            UTIL.fire('common', 'finalize');
+        }
+    };
+
+    // Load Events
+    $(document).ready(UTIL.loadEvents);
+
+})(jQuery); // Fully reference jQuery after this point.
