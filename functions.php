@@ -20,10 +20,11 @@ $sage_includes = [
   'lib/nav.php',                   // Custom nav modifications
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
-  'lib/post-type',                 // Custom Post Types
-  'lib/taxonomy',                  // Custom Taxonomies
+  'piklist/post-type',             // Custom Post Types
+  'piklist/taxonomy',              // Custom Taxonomies
   'lib/wp-defaults.php',           // Wordpress Defaults
-  //'lib/request-form.php',           // Request form
+  'lib/request-form.php',          // Request form
+  'lib/api.php'
 ];
 
 foreach ($sage_includes as $file) {

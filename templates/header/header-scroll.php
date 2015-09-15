@@ -6,11 +6,11 @@ $phone = $agency_options['agency_phone'];
 ?>
 
 <header id="menu-scroll" role="banner">
-    <div class="ui stackable page grid">
+    <div class="ui stackable grid">
         <div class="six wide column">
             <a href="<?php bloginfo('url'); ?>" class="home">
                 <?php if ($logo): ?>
-                    <img class="ui image logo" src="<?php echo wp_get_attachment_url($logo);?>" />
+                    <img class="ui tiny image logo" src="<?php echo wp_get_attachment_url($logo);?>" />
                 <?php else: ?>
                     <img class="logo" src="//placehold.it/250x100" />
                 <?php endif; ?>

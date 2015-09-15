@@ -134,8 +134,9 @@
                     min: 0,
                     max: 8000,
                     values: [ 500, 5000 ],
+                    step: 50,
                     slide: function(event, ui) {
-
+                        $('#budget').val("CHF" + ui.values[ 0 ] + " - CHF" + ui.values[ 1 ]);
                         $('.ui-slider-handle:eq(0) .price-range-min').html('CHF ' + ui.values[ 0 ]);
                         $('.ui-slider-handle:eq(1) .price-range-max').html('CHF ' + ui.values[ 1 ]);
                         $('.price-range-both').html('<i>CHF ' + ui.values[ 0 ] + ' - </i>CHF ' + ui.values[ 1 ] );
@@ -153,9 +154,10 @@
                             $('.price-range-min, .price-range-max').css('opacity', '1');
                             $('.price-range-both').css('display', 'none');
                         }
-
-                    }
+                    },
                 });
+
+                $( "#budget" ).val( "CHF" + $( "#price-slider" ).slider( 'values', 0 ) + " - CHF" + $( "#price-slider" ).slider( 'values', 1 ) );
 
                 $('.ui-slider-range').append('<span class="price-range-both value"><i>CHF' + $('#price-slider').slider('values', 0 ) + ' - </i>' + $('#price-slider').slider('values', 1 ) + '</span>');
 
@@ -190,7 +192,7 @@
         // Home page
         'home': {
             init: function () {
-                
+
                 function ajaxSubmit(){
                     var newRequest = $(this).serialize();
                     $.ajax({
@@ -198,7 +200,6 @@
                         url: sage_vars.ajaxurl,
                         data: newRequest,
                         success:function(data){
-                            alert('succes');
                             $("#feedback").html(data);
                         }
                     });
@@ -209,7 +210,7 @@
             },
 
             finalize: function () {
-                  // JavaScript to be fired on the home page, after the init JS
+                // JavaScript to be fired on the home page, after the init JS
             }
         },
         // About us page, note the change from about-us to about_us.

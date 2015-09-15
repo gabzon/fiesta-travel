@@ -60,7 +60,8 @@ function display_sidebar() {
             'is_front_page',
             ['is_page_template', ['template-custom.php']],
             ['is_page_template', ['catalog.php']],
-            ['is_singular',['product']]
+            ['is_singular',['product']],
+            ['is_tax', ['place']]
         ]);
 
         $display = apply_filters('sage/display_sidebar', $conditionalCheck->result);

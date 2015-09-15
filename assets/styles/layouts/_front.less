@@ -1,3 +1,4 @@
+//@ft-primary;
 
 .ui.segment{
     margin:0;
@@ -5,14 +6,25 @@
 
 #landing{
     padding-top: 200px;
-    h1.massive-header{font-size:60px; color:@ft-primary;}
+    h1.massive-header{font-size:60px; color:white;}
     #landing-destinations{.ui.button{margin-bottom: 5px;}}
-    h2.ui.icon.header{color:@ft-primary;}
+    h2.ui.icon.header{color:white;}
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    //url('../images/rio-de-janeiro.png');
+    //url('../images/rio-de-janeiro-1.png');
+    //url('../images/rio-de-janeiro-2.png');
+    //url('../images/rio-de-janeiro-3.png');
+    url('../images/rio-de-janeiro-3.jpg');
+    //url('../images/landing-image-1920x1080.png');
+    background-size: cover;
 }
 
 section#promotion{
     background: @ft-primary-dark;
-    h2.ui.header{color:white}
+    //h2.ui.header{color:white}
     .segment-content{
         padding:5% 0;
     }
@@ -23,13 +35,11 @@ section#about{
 }
 
 section#services{
-    background: @ft-secondary;
+    //background: @ft-secondary;
     .segment-content{
         padding:5% 0;
     }
-    .header{
-        color:white;
-    }
+    .header{color:@ft-primary-dark;}
 }
 
 

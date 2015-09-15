@@ -115,21 +115,3 @@ function new_excerpt_more( $excerpt ) {
     return '';
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\new_excerpt_more' );
-
-function requestQuote(){
-
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-
-    if( wp_mail( 'gabriel@sevinci.com','el titulo', $name) === FALSE){
-        echo "error";
-    } else{
-        echo "YEEEAH BABY";
-    }
-    die();
-
-}
-
-add_action('wp_ajax_requestQuote', 'requestQuote');
-add_action('wp_ajax_nopriv_requestQuote', 'requestQuote');

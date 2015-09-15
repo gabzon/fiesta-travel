@@ -28,7 +28,7 @@ $phone = $agency_options['agency_phone'];
             <div class="ui page vertically padded grid">
                 <a class="item" href="<?= esc_url(home_url('/')); ?>">
                     <?php if ($logo): ?>
-                        <img class="ui image logo" src="<?php echo wp_get_attachment_url($logo);?>" width="120"/>
+                        <img class="ui tiny image logo" src="<?php echo wp_get_attachment_url($logo);?>" width="120"/>
                     <?php else: ?>
                         <?php bloginfo('name'); ?>
                     <?php endif; ?>
